@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #FA2019;
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+    height: 16vh;
+    padding: 2vh;
+    /* margin-bottom: 2vh; */
+}
+
+main {
+    padding: 2vh;
+}
+
+#logo {
+    width: -webkit-fill-available;
+}
+
+@-moz-document url-prefix() {
+    #logo {
+        width: -moz-available;
+    }
+}
+
+.titulo_header {
+    font-family: 'Antonio', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botao_menu {
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vermelho {
+    color: #FA2019;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: 16,66% 16,67% 16,67% 16,67% 16,67% 16,66%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.bloco {
+    background-color: #DFDFDF;
+    padding: 2vh;
+    margin: 2vh;
+}
