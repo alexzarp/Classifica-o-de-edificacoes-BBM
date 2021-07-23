@@ -8,10 +8,15 @@
 }
 
 header {
-    background-color: #FA2019;
+    /* background-color: #FA2019; */
+    background-image: url("../img/fogo.jpg");
+    background-position: center -639px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
     display: grid;
-    grid-template-columns: 8% 84% 8%;
-    height: 16vh;
+    grid-template-columns: 5% 90% 5%;
+    height: 10vh;
     padding: 2vh;
     /* margin-bottom: 2vh; */
 }
@@ -22,6 +27,10 @@ main {
 
 #logo {
     width: -webkit-fill-available;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @-moz-document url-prefix() {
@@ -53,7 +62,7 @@ main {
 
 .grade {
     display: grid;
-    grid-template-columns: 16.66% 16.67% 16.67% 16.67% 16.67% 16.66%;
+    grid-template-columns: repeat(6, 1fr);
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap; */
