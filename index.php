@@ -23,8 +23,8 @@
 
         <div class="grade">
             <div id="A" class="bloco" onclick="blocoA()">
-                <h4 class="titulo_bloco">A - Resiencial</h4>
-                <img src="assets/img/nvl1/preto/casa.svg" alt="Casa" class="icones_centrais">
+                <h4 id="A_h4" class="titulo_bloco">A - Resiencial</h4>
+                <img id="A_img" src="assets/img/nvl1/preto/casa.svg" alt="Casa" class="icones_centrais">
             </div>
     
             <div id="B" class="bloco">

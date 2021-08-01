@@ -112,6 +112,11 @@ main {
     font-size: 1.2rem;
 }
 
+div[disabled=disabled] {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
 #AA {
     display: none;
 }
