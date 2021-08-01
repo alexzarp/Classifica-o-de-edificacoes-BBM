@@ -63,9 +63,6 @@ main {
 .grade {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
 }
 
 .bloco {
@@ -73,6 +70,8 @@ main {
     padding: 2vh;
     margin: 2vh;
     border-radius: 2vh;
+    width: 10.4rem;
+    height: 10.4rem; /* Não tenho cereteza como essas medidas vão se comportar */
 }
 
 .icones_centrais {
@@ -84,4 +83,9 @@ main {
 
 .titulo_bloco {
     text-align: center;
+}
+
+#AA {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

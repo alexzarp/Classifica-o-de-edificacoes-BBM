@@ -8,8 +8,7 @@
     <meta name="keywords" content="Bombeiros SC, Edificações, Alavará, Fogo, Segurança">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shorcut icon" href="assets/img/logo.png">
-    <link rel="stylesheet" href="assets/CSS/geral.css">
-    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
     <header>
@@ -22,74 +21,78 @@
         <h1 class="vermelho">Escolha a classificação de ocupação:</h1> <br>
 
         <div class="grade">
-            <div class="bloco">
+            <div id="A" class="bloco" onclick="blocoA()">
                 <h4 class="titulo_bloco">A - Resiencial</h4>
-                <img src="assets/img/casa.svg" alt="Casa" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/casa.svg" alt="Casa" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="B" class="bloco">
                 <h4 class="titulo_bloco">B - Serviço de Hospedagem</h4>
-                <img src="assets/img/hotel.svg" alt="Hotel" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/hotel.svg" alt="Hotel" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="C" class="bloco">
                 <h4 class="titulo_bloco">C - Comercial</h4>
-                <img src="assets/img/comercio.svg" alt="Comercio" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/comercio.svg" alt="Comercio" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="D" class="bloco">
                 <h4 class="titulo_bloco">D - Serviço profissional</h4>
-                <img src="assets/img/profissional.svg" alt="Profissional" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/profissional.svg" alt="Profissional" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="E" class="bloco">
                 <h4 class="titulo_bloco">E - Educacional e<br>Cultura física</h4>
-                <img src="assets/img/educacao.svg" alt="Educacão" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/educacao.svg" alt="Educacão" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="F" class="bloco">
                 <h4 class="titulo_bloco">F - Local de Reunião de Público</h4>
-                <img src="assets/img/reuniao.svg" alt="Reunião" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/reuniao.svg" alt="Reunião" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="G" class="bloco">
                 <h4 class="titulo_bloco">G - Serviço automotivo e<br>assemelhados</h4>
-                <img src="assets/img/carro.svg" alt="Carro" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/carro.svg" alt="Carro" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="H" class="bloco">
                 <h4 class="titulo_bloco">H - Serviço de saúde e<br>institucional</h4>
-                <img src="assets/img/hospital.svg" alt="Hospital" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/hospital.svg" alt="Hospital" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="I" class="bloco">
                 <h4 class="titulo_bloco">I - Indústria</h4>
-                <img src="assets/img/industria.svg" alt="Indústria" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/industria.svg" alt="Indústria" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="J" class="bloco">
                 <h4 class="titulo_bloco">J - Depósito</h4>
-                <img src="assets/img/deposito.svg" alt="Depósito" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/deposito.svg" alt="Depósito" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="K" class="bloco">
                 <h4 class="titulo_bloco">K - Energia</h4>
-                <img src="assets/img/energia.svg" alt="Energia" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/energia.svg" alt="Energia" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="L" class="bloco">
                 <h4 class="titulo_bloco">L - Explosivo</h4>
-                <img src="assets/img/explosivo.svg" alt="Explosivo" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/explosivo.svg" alt="Explosivo" class="icones_centrais">
             </div>
     
-            <div class="bloco">
+            <div id="M" class="bloco">
                 <h4 class="titulo_bloco">M - Especial</h4>
-                <img src="assets/img/especial.svg" alt="Especial" class="icones_centrais">
+                <img src="assets/img/nvl1/preto/especial.svg" alt="Especial" class="icones_centrais">
             </div>
         </div>
 
+        <?php
+            include("views/AA.php");
+        ?>
     </main>
 
     <footer></footer>
+    <script></script>
 </body>
 </html>
