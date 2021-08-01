@@ -66,6 +66,8 @@ main {
 }
 
 .bloco {
+    display: grid;
+    grid-template-rows: 20% 80%;
     background-color: #DFDFDF;
     padding: 2vh;
     margin: 2vh;
@@ -85,7 +87,31 @@ main {
     text-align: center;
 }
 
-#AA {
+.sublocos_centrais {
+    display: flex;
+    /* align-items: center; */  /* Vertical não é necessário */
+    justify-content: center;
+}
+
+.divisoes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 4% 95% 1%;
+}
+
+.linha_divisoria {
+    background-color: #C4C4C4;
+    height: 2px;
+}
+.linha_divisoria, .divisoes svg {
+    margin-top: 10.8px;
+}
+
+.texto_divisoria {
+    color: red;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+#AA {
+    display: none;
 }

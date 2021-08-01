@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shorcut icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="assets/JS/funcoes_bloco.js" defer></script>
 </head>
 <body>
     <header>
@@ -93,6 +94,5 @@
     </main>
 
     <footer></footer>
-    <script></script>
 </body>
 </html>
