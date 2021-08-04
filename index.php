@@ -3,7 +3,7 @@
 <head>
     <title>Classificação de Edificações</title>
     <meta charset="utf-8">
-    <meta name="author" content="Alex Sandro Zarpelon, Bruna Gabriela Disner, Rafael Gama Fernandes"> <!--Rafael por favor conferir o nome-->
+    <meta name="author" content="Alex Sandro Zarpelon, Bruna Gabriela Disner, Rafael Gama Fernandes">
     <meta name="description" content="Este sistema tem como objetivo agilizar a classificação e liberação de edificações.">
     <meta name="keywords" content="Bombeiros SC, Edificações, Alavará, Fogo, Segurança">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -23,7 +23,7 @@
 
         <div class="grade">
             <div id="A" class="bloco" onclick="blocoA()">
-                <h4 id="A_h4" class="titulo_bloco">A - Resiencial</h4>
+                <h4 id="A_h4" class="titulo_bloco">A - Residencial</h4>
                 <img id="A_img" src="assets/img/nvl1/preto/casa.svg" alt="Casa" class="icones_centrais">
             </div>
     

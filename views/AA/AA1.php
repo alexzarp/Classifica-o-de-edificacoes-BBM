@@ -1,5 +1,5 @@
 <div id="AA1">
-    <?php include("linhas_divisorias/lin_nvl3.php") ?>
+    <?php include("views/linhas_divisorias/lin_nvl3.php") ?>
     <div class="sublocos_centrais">
         <div id="UnifamiliarMista" class="bloco" onclick="unifamiliar_mista()">
             <h4 id="UnifamiliarMista_h4" class="titulo_bloco">Unifamiliar mista</h4>

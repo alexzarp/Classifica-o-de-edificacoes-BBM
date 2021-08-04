@@ -39,5 +39,5 @@ function unifamiliar_mista() {
 
     document.getElementById("UnifamiliarMista").style.backgroundColor = '#A438E6';
     document.getElementById("UnifamiliarMista").style.color = '#FFFFFF';
-    document.getElementById("UnifamiliarMista").src = '../assets/img/nvl2_A/nvl3_A1/branco/familia_sorrindo.svg';
+    document.getElementById("UnifamiliarMista_img").src = '../assets/img/nvl2_A/nvl3_A1/branco/familia_sorrindo.svg';
 }
