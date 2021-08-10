@@ -10,12 +10,20 @@
     <link rel="shorcut icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <script src="assets/JS/funcoes_bloco.js" defer></script>
+    <script src="assets/JS/funcoes_complementares.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="assets/img/logo.png" alt="Logo Bombeiros" id="logo">
-        <h1 class="titulo_header">Sistema de Classificação de Edificações</h1>
-        <img src="assets/img/menu.svg" alt="Botão Menu" id="botao_menu">
+        <div>
+            <img src="assets/img/logo.png" alt="Logo Bombeiros" id="logo" class="anima">
+            <h1 class="titulo_header">Sistema de Classificação de Edificações</h1>
+            <img src="assets/img/menu.svg" alt="Botão Menu" id="botao_menu" class="anima">
+        </div>
+        <nav id="menu">
+            <a href="#" class="anima">Sobre nós</a>
+            <a href="#" class="anima">Bombeiros</a>
+            <a href="#" class="anima">Desenvolvedores</a>
+        </nav>
     </header>
 
     <main>

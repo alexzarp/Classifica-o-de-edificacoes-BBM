@@ -14,11 +14,30 @@ header {
     background-size: 100%;
     background-repeat: no-repeat;
 
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
     height: 10vh;
     padding: 2vh;
-    /* margin-bottom: 2vh; */
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+header nav {
+    display: none;
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    float: right;
+    text-align: end;
+    background-color: #c2c2c2;
+    width: 13vw;
+    border-radius: 10%;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 10%;
 }
 
 main {
@@ -54,6 +73,7 @@ main {
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+    width: 6vh;
 }
 
 .vermelho {
@@ -115,6 +135,12 @@ main {
 div[disabled=disabled] {
     pointer-events: none;
     opacity: 0.4;
+}
+
+
+.anima:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
 }
 
 #AA, #AA1 {
