@@ -96,7 +96,7 @@ main {
     height: 10.4rem; /* Não tenho cereteza como essas medidas vão se comportar */
 }
 
-.icones_centrais {
+.bloco svg, .icones_centrais {
     display: flex;    
     margin: auto;
     height: 80%;
