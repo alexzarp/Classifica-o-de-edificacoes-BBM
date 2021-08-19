@@ -1,4 +1,4 @@
-<div id="AA1">
+<div id="A1_">
     <?php include("views/linhas_divisorias/lin_nvl3.php") ?>
     <div class="sublocos_centrais">
         <div id="UnifamiliarMista" class="bloco" onclick="unifamiliar_mista()">

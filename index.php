@@ -44,7 +44,7 @@
         </div>
         
         <?php
-            include("views/AA.php");
+            include("views/A.php");
             // include("views/BB.php");
             // include("views/CC.php");
             // include("views/DD.php");

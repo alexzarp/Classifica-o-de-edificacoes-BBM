@@ -7,6 +7,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --azul: #307BFF;
+    --laranja: #EB8C13;
+    --roxo: #A438E6;
+}
+
 header {
     /* background-color: #FA2019; */
     background-image: url("../img/fogo.jpg");
@@ -132,17 +138,11 @@ main {
     font-size: 1.2rem;
 }
 
-div[disabled=disabled] {
-    pointer-events: none;
-    opacity: 0.4;
-}
-
-
 .anima:hover {
     transition: 0.2s;
     transform: scale(1.2);
 }
 
-#AA, #AA1 {
+#A_, #A1_ {
     display: none;
 }
