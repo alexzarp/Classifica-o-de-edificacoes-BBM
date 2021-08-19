@@ -12,7 +12,7 @@
 //         menu = true
 //     }
 // }
- 
+
 document.addEventListener("click", function(evt) {
     var flyoutElement = document.getElementById('botao_menu'),
         targetElement = evt.target;

@@ -1,26 +1,29 @@
-function blocoA() {
-    document.getElementById("B").setAttribute("disabled", "disabled");
-    document.getElementById("C").setAttribute("disabled", "disabled");
-    document.getElementById("D").setAttribute("disabled", "disabled");
-    document.getElementById("E").setAttribute("disabled", "disabled");
-    document.getElementById("F").setAttribute("disabled", "disabled");
-
-    document.getElementById("G").style.display = 'none';
-    document.getElementById("H").style.display = 'none';
-    document.getElementById("I").style.display = 'none';
-    document.getElementById("J").style.display = 'none';
-    document.getElementById("K").style.display = 'none';
-    document.getElementById("L").style.display = 'none';
-    document.getElementById("M").style.display = 'none';
-
-    document.getElementById("AA").style.display = 'inherit';
-
-    document.getElementById("A").style.backgroundColor = '#307BFF';
-    document.getElementById("A_h4").style.color = '#FFFFFF';
-    document.getElementById("A_img").src = 'assets/img/nvl1/branco/casa.svg'; 
+var classificacoes = document.querySelectorAll("#classificacoes input");
+function coloreClassificacao(id) {
+    classificacoes.forEach(c => {
+        blocoAA1();
+        if(c.id == id)
+        {
+            let label = document.querySelector("label[for=" + id + "]");
+            label.style.display = 'inherit';
+            label.style.backgroundColor = '#307BFF';
+            label.style.color = '#FFFFFF';
+            label.querySelector("img").src = "assets/img/nvl1/branco/" + id + ".svg";
+            // document.getElementById("A_img").src = 'assets/img/nvl1/branco/casa.svg';
+        }
+        else
+            document.getElementById("F").setAttribute("disabled", "disabled");
+    });
 }
 
+// document.querySelectorAll(".bloco").forEach(element => {
+//     element.addEventListener("click", function (e) {
+//         document.querySelector("form").submit();
+//     }
+// )});
+
 function blocoAA1() {
+
     document.getElementById("A2").setAttribute("disabled", "disabled");
     document.getElementById("A3").setAttribute("disabled", "disabled");
 
@@ -39,5 +42,5 @@ function unifamiliar_mista() {
 
     document.getElementById("UnifamiliarMista").style.backgroundColor = '#A438E6';
     document.getElementById("UnifamiliarMista").style.color = '#FFFFFF';
-    document.getElementById("UnifamiliarMista_img").src = '../assets/img/nvl2_A/nvl3_A1/branco/familia_sorrindo.svg';
+    document.getElementById("UnifamiliarMista_img").src = './assets/img/nvl2_A/nvl3_A1/branco/familia_sorrindo.svg';
 }
