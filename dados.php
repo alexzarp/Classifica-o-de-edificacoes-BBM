@@ -109,7 +109,7 @@ $vetor_nvl2_A = [
     ],
     [
         "id" => "A3",
-        "onClick" => "blocos('A3_', 'A3')",
+        "onClick" => "blocos('A2_', 'A3')", // caso espacial que eu uso o mesmo form A2
         "titulo" => "A3 - Coletiva",
         "imagem" => $A3,
     ]

@@ -113,6 +113,16 @@ main {
     justify-content: center;
 }
 
+.form_central div {
+    text-align: center;
+}
+/* form {
+    display: inline-block; 
+} */
+
+form {
+    display: inline-block;
+}
 
 .divisoes {
     display: grid;
@@ -143,12 +153,11 @@ input[type=text], input[type=submit] {
     border: 2px solid #DFDFDF;
     border-radius: 50vh;
     padding: 10px;
-    width: -webkit-fill-available;
+    width: 310px;
     margin: 5px;
 }
 input[type=submit] {
     border: transparent;
-    margin: 0 8vw 0 8vw;
     background-color: #DFDFDF;
 }
 
@@ -163,7 +172,7 @@ footer {
 
 
 @-moz-document url-prefix() {
-    #logo, input[type=text], input[type=submit] {
+    #logo {
         width: -moz-available;
     }
 }
