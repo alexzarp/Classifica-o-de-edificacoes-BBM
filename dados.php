@@ -91,7 +91,7 @@ $vetor_nvl1 = [
         "titulo" => "M - Especial",
         "imagem" => $M,
         "alt" => "Especial"
-    ],
+    ]
 ];
 
 $vetor_nvl2_A = [
@@ -105,13 +105,35 @@ $vetor_nvl2_A = [
         "id" => "A2",
         "onClick" => "blocoA2()",
         "titulo" => "A2 - Multifamiliar vertical",
-        "imagem" => $A1,
+        "imagem" => $A2,
     ],
     [
         "id" => "A3",
         "onClick" => "blocoA3()",
-        "titulo" => "A3",
-        "imagem" => $A1,
+        "titulo" => "A3 - Coletiva",
+        "imagem" => $A3,
     ]
-]
+];
+
+$vetor_nvl3_A1 = [
+    [
+        "id" => "UnifamiliarMista",
+        "onClick" => "blocoUM()",
+        "titulo" => "Unifamiliar mista",
+        "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "Geminadas",
+        "onClick" => "blocoGem()",
+        "titulo" => "Geminadas",
+        "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "Isoladas",
+        "onClick" => "blocoIso()",
+        "titulo" => "Isoladas",
+        "imagem" => $Geminadas,
+    ]
+];
+
 ?>
