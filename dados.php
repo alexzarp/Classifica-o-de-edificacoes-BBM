@@ -3,7 +3,7 @@ include_once("assets/img/imagens.php");
 $vetor_nvl1 = [
     [
         "id" => "A",
-        "onClick" => "blocos('A_', 'A')",
+        "onClick" => "ocultaSubblocos('A_', 'A2_'); resetaBlocos('A', 'Isoladas'); blocos('A_', 'A');",
         "titulo" => "A - Residencial",
         "imagem" => $A,
         "alt" => "Casa"

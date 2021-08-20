@@ -4,66 +4,61 @@ roxo = "#A438E6";
 branco = "#FFFFFF";
 preto = "#000000";
 
-function resetaBlocos() {
+function resetaBlocos(comeco, fim) {
     var lista = document.getElementsByClassName("bloco").length;
     for (i = 0; i < lista; i++){
-        document.getElementsByClassName("bloco")[i].style.backgroundColor = "#DFDFDF";
-        document.getElementsByClassName("bloco")[i].querySelector("svg").style.color = "inherit";
-        document.getElementsByClassName("bloco")[i].querySelector("h4").style.color = "inherit";
+        if (document.getElementsByClassName("bloco")[i].id == comeco) {
+            for (j = i; j < lista; j++) {
+                document.getElementsByClassName("bloco")[j].style.backgroundColor = "#DFDFDF";
+                document.getElementsByClassName("bloco")[j].querySelector("h4").style.color = "inherit";
+                if (document.getElementsByClassName("bloco")[j].querySelector("svg") != null) {
+                    document.getElementsByClassName("bloco")[j].querySelector("svg").style.color = preto;
+                }
+
+                if (document.getElementsByClassName("bloco")[j].id == fim) {
+                    break;
+                }
+            }
+            break;
+        }
     }
 }
 
-function ocultaMostraBlocos(vet = [], bin) {
-    if (bin == 0) {
-        vet.forEach(element => {
-            document.getElementById(element).style.display = 'none';
-        });
-    } else {
-        vet.forEach(element => {
-            document.getElementById(element).style.display = 'inherit';
-        });
+function ocultaSubblocos(comeco, fim) {
+    var lista = document.getElementsByClassName("sub_bloco").length;
+    for (i = 0; i < lista; i++){
+        if (document.getElementsByClassName("sub_bloco")[i].id == comeco) {
+            for (j = i; j < lista; j++) {
+                document.getElementsByClassName("sub_bloco")[j].style.display = 'none';
+                
+                if (document.getElementsByClassName("sub_bloco")[j].id == fim) {
+                    break;
+                }
+            }
+            break;
+        }
     }
-    
 }
+
+// function ocultaMostraBlocos(vet = [], bin) {
+    //     if (bin == 0) {
+    //         vet.forEach(element => {
+    //             document.getElementById(element).style.display = 'none';
+    //         });
+    //     } else {
+    //         vet.forEach(element => {
+    //             document.getElementById(element).style.display = 'inherit';
+    //         });
+    //     }
+        
+    // }
 
 function blocos(value_, value) {
     document.getElementById(value_).style.display = 'inherit';
 
     document.getElementById(value).style.backgroundColor = azul;
     document.getElementById(value).querySelector("h4").style.color = branco;
-    document.getElementById(value).querySelector("svg").style.color = branco; // pelo fato que não conter um svg nos sublocos, isso causa um erro no consele, buscar uma solução simples para isso
+    if (document.getElementById(value).querySelector("svg") != null) {
+        document.getElementById(value).querySelector("svg").style.color = branco;
+    }
 }
-
-// function blocoA() {
-//     ocultaMostraBlocos(["G", "H", "I", "J", "K", "L", "M"], 0);
-
-//     document.getElementById("A_").style.display = 'inherit';
-
-//     document.getElementById("A").style.backgroundColor = azul;
-//     document.getElementById("A").querySelector("svg").style.fill = "#FFFFFF";
-//     document.getElementById("A").querySelector("h4").style.color = "#FFFFFF";
-// }
-
-// function blocoA1() {
-//     document.getElementById("A1_").style.display = 'inherit';
-
-//     document.getElementById("A1").style.backgroundColor = laranja;
-//     document.getElementById("A1").querySelector("svg").style.fill = "#FFFFFF";
-//     document.getElementById("A1").querySelector("h4").style.color = "#FFFFFF";
-// }
-
-// function blocoA2() {
-//     document.getElementById("A2_").style.display = 'inherit';
-
-//     document.getElementById("A2").style.backgroundColor = laranja;
-//     document.getElementById("A2").querySelector("svg").style.fill = "#FFFFFF";
-//     document.getElementById("A2").querySelector("h4").style.color = "#FFFFFF";
-// }
-
-// function blocoUM() {
-//     document.getElementById("UnifamiliarMista_").style.display = 'inherit';
-
-//     document.getElementById("UnifamiliarMista").style.backgroundColor = roxo;
-//     document.getElementById("UnifamiliarMista").querySelector("svg").style.fill = "#FFFFFF";
-//     document.getElementById("UnifamiliarMista").querySelector("h4").style.color = "#FFFFFF";
-// }

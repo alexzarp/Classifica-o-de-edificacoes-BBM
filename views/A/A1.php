@@ -1,4 +1,4 @@
-<div id="A1_">
+<div id="A1_" class="sub_bloco">
     <?php include("views/linhas_divisorias/lin_nvl3.php") ?>
     <div class="sublocos_centrais">
     <?php

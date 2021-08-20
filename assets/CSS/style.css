@@ -165,6 +165,7 @@ input[type=text], input[type=submit], select {
 input[type=submit] {
     border: transparent;
     background-color: #DFDFDF;
+    width: 120px;
 }
 
 footer {

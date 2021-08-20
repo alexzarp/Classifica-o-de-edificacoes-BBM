@@ -1,4 +1,4 @@
-<div id="UnifamiliarMista_">
+<div id="UnifamiliarMista_" class="sub_bloco">
     <?php include("views/linhas_divisorias/lin_nvl4.php") ?>
     <div class="form_central">
         <div>
