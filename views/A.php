@@ -16,4 +16,6 @@
 
 <?php
     include("views/A/A1.php");
+    include("views/A/A2.php");
+    // include("views/A/A3.php");
 ?>
