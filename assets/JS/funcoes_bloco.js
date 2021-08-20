@@ -26,28 +26,44 @@ function ocultaMostraBlocos(vet = [], bin) {
     
 }
 
-function blocoA() {
-    ocultaMostraBlocos(["G", "H", "I", "J", "K", "L", "M"], 0);
+function blocos(value_, value) {
+    document.getElementById(value_).style.display = 'inherit';
 
-    document.getElementById("A_").style.display = 'inherit';
-
-    document.getElementById("A").style.backgroundColor = azul;
-    document.getElementById("A").querySelector("svg").style.fill = "#FFFFFF";
-    document.getElementById("A").querySelector("h4").style.color = "#FFFFFF";
+    document.getElementById(value).style.backgroundColor = azul;
+    document.getElementById(value).querySelector("svg").style.fill = "#FFFFFF";
+    document.getElementById(value).querySelector("h4").style.color = "#FFFFFF";
 }
 
-function blocoA1() {
-    document.getElementById("A1_").style.display = 'inherit';
+// function blocoA() {
+//     ocultaMostraBlocos(["G", "H", "I", "J", "K", "L", "M"], 0);
 
-    document.getElementById("A1").style.backgroundColor = laranja;
-    document.getElementById("A1").querySelector("svg").style.fill = "#FFFFFF";
-    document.getElementById("A1").querySelector("h4").style.color = "#FFFFFF";
-}
+//     document.getElementById("A_").style.display = 'inherit';
 
-function blocoUM() {
-    document.getElementById("UnifamiliarMista_").style.display = 'inherit';
+//     document.getElementById("A").style.backgroundColor = azul;
+//     document.getElementById("A").querySelector("svg").style.fill = "#FFFFFF";
+//     document.getElementById("A").querySelector("h4").style.color = "#FFFFFF";
+// }
 
-    document.getElementById("UnifamiliarMista").style.backgroundColor = roxo;
-    document.getElementById("UnifamiliarMista").querySelector("svg").style.fill = "#FFFFFF";
-    document.getElementById("UnifamiliarMista").querySelector("h4").style.color = "#FFFFFF";
-}
+// function blocoA1() {
+//     document.getElementById("A1_").style.display = 'inherit';
+
+//     document.getElementById("A1").style.backgroundColor = laranja;
+//     document.getElementById("A1").querySelector("svg").style.fill = "#FFFFFF";
+//     document.getElementById("A1").querySelector("h4").style.color = "#FFFFFF";
+// }
+
+// function blocoA2() {
+//     document.getElementById("A2_").style.display = 'inherit';
+
+//     document.getElementById("A2").style.backgroundColor = laranja;
+//     document.getElementById("A2").querySelector("svg").style.fill = "#FFFFFF";
+//     document.getElementById("A2").querySelector("h4").style.color = "#FFFFFF";
+// }
+
+// function blocoUM() {
+//     document.getElementById("UnifamiliarMista_").style.display = 'inherit';
+
+//     document.getElementById("UnifamiliarMista").style.backgroundColor = roxo;
+//     document.getElementById("UnifamiliarMista").querySelector("svg").style.fill = "#FFFFFF";
+//     document.getElementById("UnifamiliarMista").querySelector("h4").style.color = "#FFFFFF";
+// }
