@@ -1,10 +1,14 @@
-<div id="UnifamiliarMista_">
+<div id="Geminadas_">
     <?php include("views/linhas_divisorias/lin_nvl4.php") ?>
     <div class="form_central">
         <div>
-            <h1>Informe a altura da edificação</h1>
+            <h1>Há GLP(Gás)?</h1>
             <form>
-                <input type="text" id="altura" name="altura" placeholder="Digite a altura"><br>
+                <select name="altura" id="altura">
+                    <option value="none"></option>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select><br>
                 <input type="submit" value="Submeter">
             </form>
         </div>

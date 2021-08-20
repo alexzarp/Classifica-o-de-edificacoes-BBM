@@ -96,6 +96,12 @@ main {
     height: 10.4rem; /* Não tenho cereteza como essas medidas vão se comportar */
 }
 
+.bloco_anula {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
 .bloco svg, .icones_centrais {
     display: flex;    
     margin: auto;
@@ -148,7 +154,7 @@ form {
     transform: scale(1.2);
 }
 /* input[type=submit] input[type=button] input[type=email] input[type=password] input[type=tel] textarea input[type=reset] input[type=date] select*/
-input[type=text], input[type=submit] {
+input[type=text], input[type=submit], select {
     /* border: border-width border-style border-color  */
     border: 2px solid #DFDFDF;
     border-radius: 50vh;
@@ -166,7 +172,7 @@ footer {
     height: 50px;
 }
 
-#A_, #A1_, #A2_, #UnifamiliarMista_ {
+#A_, #A1_, #A2_, #UnifamiliarMista_, #Geminadas_{
     display: none;
 }
 
@@ -175,4 +181,8 @@ footer {
     #logo {
         width: -moz-available;
     }
+}
+
+svg {
+    color: black;
 }

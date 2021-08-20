@@ -99,19 +99,19 @@ $vetor_nvl2_A = [
         "id" => "A1",
         "onClick" => "blocos('A1_', 'A1')",
         "titulo" => "A1 - Multifamiliar horizontal e unifamiliar",
-        "imagem" => $A1,
+        // "imagem" => $A1,
     ],
     [
         "id" => "A2",
         "onClick" => "blocos('A2_', 'A2')",
         "titulo" => "A2 - Multifamiliar vertical",
-        "imagem" => $A2,
+        // "imagem" => $A2,
     ],
     [
         "id" => "A3",
         "onClick" => "blocos('A2_', 'A3')", // caso espacial que eu uso o mesmo form A2
         "titulo" => "A3 - Coletiva",
-        "imagem" => $A3,
+        // "imagem" => $A3,
     ]
 ];
 
@@ -120,19 +120,19 @@ $vetor_nvl3_A1 = [
         "id" => "UnifamiliarMista",
         "onClick" => "blocos('UnifamiliarMista_', 'UnifamiliarMista')",
         "titulo" => "Unifamiliar mista",
-        "imagem" => $UnifamiliarMista,
+        // "imagem" => $UnifamiliarMista,
     ],
     [
         "id" => "Geminadas",
         "onClick" => "blocos('Geminadas_', 'Geminadas')",
         "titulo" => "Geminadas",
-        "imagem" => $Geminadas,
+        // "imagem" => $Geminadas,
     ],
     [
         "id" => "Isoladas",
-        "onClick" => "blocos('Isoladas_', 'Isoladas')",
+        "onClick" => "blocos('Geminadas_', 'Isoladas')",
         "titulo" => "Isoladas",
-        "imagem" => $Geminadas,
+        // "imagem" => $Geminadas,
     ]
 ];
 

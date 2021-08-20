@@ -8,7 +8,7 @@ function resetaBlocos() {
     var lista = document.getElementsByClassName("bloco").length;
     for (i = 0; i < lista; i++){
         document.getElementsByClassName("bloco")[i].style.backgroundColor = "#DFDFDF";
-        document.getElementsByClassName("bloco")[i].querySelector("svg").style.fill = "inherit";
+        document.getElementsByClassName("bloco")[i].querySelector("svg").style.color = "inherit";
         document.getElementsByClassName("bloco")[i].querySelector("h4").style.color = "inherit";
     }
 }
@@ -30,8 +30,8 @@ function blocos(value_, value) {
     document.getElementById(value_).style.display = 'inherit';
 
     document.getElementById(value).style.backgroundColor = azul;
-    document.getElementById(value).querySelector("svg").style.fill = "#FFFFFF";
-    document.getElementById(value).querySelector("h4").style.color = "#FFFFFF";
+    document.getElementById(value).querySelector("h4").style.color = branco;
+    document.getElementById(value).querySelector("svg").style.color = branco; // pelo fato que não conter um svg nos sublocos, isso causa um erro no consele, buscar uma solução simples para isso
 }
 
 // function blocoA() {
