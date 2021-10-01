@@ -17,4 +17,5 @@
 <?php
     include("views/A/A1/UM.php");
     include("views/A/A1/Gem.php");
+    include("views/A/A1/Iso.php");
 ?>

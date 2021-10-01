@@ -4,8 +4,9 @@ roxo = "#A438E6";
 branco = "#FFFFFF";
 preto = "#000000";
 
-function resetaBlocos(comeco, fim) {
+function resetaBlocos(comeco) {
     var lista = document.getElementsByClassName("bloco").length;
+    // var fim = (document.getElementsByClassName("bloco").length) - 1;
     for (i = 0; i < lista; i++){
         if (document.getElementsByClassName("bloco")[i].id == comeco) {
             for (j = i; j < lista; j++) {
@@ -15,43 +16,30 @@ function resetaBlocos(comeco, fim) {
                     document.getElementsByClassName("bloco")[j].querySelector("svg").style.color = preto;
                 }
 
-                if (document.getElementsByClassName("bloco")[j].id == fim) {
-                    break;
-                }
+                // if (document.getElementsByClassName("bloco")[j].id == fim) {
+                //     break;
+                // }
             }
             break;
         }
     }
 }
 
-function ocultaSubblocos(comeco, fim) {
+function ocultaSubblocos(comeco) {
     var lista = document.getElementsByClassName("sub_bloco").length;
     for (i = 0; i < lista; i++){
         if (document.getElementsByClassName("sub_bloco")[i].id == comeco) {
             for (j = i; j < lista; j++) {
                 document.getElementsByClassName("sub_bloco")[j].style.display = 'none';
                 
-                if (document.getElementsByClassName("sub_bloco")[j].id == fim) {
-                    break;
-                }
+                // if (document.getElementsByClassName("sub_bloco")[j].id == fim) {
+                //     break;
+                // }
             }
             break;
         }
     }
 }
-
-// function ocultaMostraBlocos(vet = [], bin) {
-    //     if (bin == 0) {
-    //         vet.forEach(element => {
-    //             document.getElementById(element).style.display = 'none';
-    //         });
-    //     } else {
-    //         vet.forEach(element => {
-    //             document.getElementById(element).style.display = 'inherit';
-    //         });
-    //     }
-        
-    // }
 
 function blocos(value_, value) {
     document.getElementById(value_).style.display = 'inherit';
@@ -61,4 +49,12 @@ function blocos(value_, value) {
     if (document.getElementById(value).querySelector("svg") != null) {
         document.getElementById(value).querySelector("svg").style.color = branco;
     }
+}
+
+function runScript(value, reset) {
+    var reset_ = reset + '_';
+    ocultaSubblocos(reset_);
+    resetaBlocos(reset);
+    var value_ = value + '_';
+    blocos(value_, value)
 }

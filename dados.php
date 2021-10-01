@@ -3,7 +3,7 @@ include_once("assets/img/imagens.php");
 $vetor_nvl1 = [
     [
         "id" => "A",
-        "onClick" => "ocultaSubblocos('A_', 'A2_'); resetaBlocos('A', 'Isoladas'); blocos('A_', 'A');",
+        "onClick" => "runScript('A', 'A');",
         "titulo" => "A - Residencial",
         "imagem" => $A,
         "alt" => "Casa"
@@ -97,19 +97,19 @@ $vetor_nvl1 = [
 $vetor_nvl2_A = [
     [
         "id" => "A1",
-        "onClick" => "blocos('A1_', 'A1')",
+        "onClick" => "runScript('A1', 'A1');",
         "titulo" => "A1 - Multifamiliar horizontal e unifamiliar",
         // "imagem" => $A1,
     ],
     [
         "id" => "A2",
-        "onClick" => "blocos('A2_', 'A2')",
+        "onClick" => "runScript('A2', 'A1');",
         "titulo" => "A2 - Multifamiliar vertical",
         // "imagem" => $A2,
     ],
     [
         "id" => "A3",
-        "onClick" => "blocos('A2_', 'A3')", // caso espacial que eu uso o mesmo form A2
+        "onClick" => "runScript('A3', 'A1');", // caso espacial que eu uso o mesmo form A2
         "titulo" => "A3 - Coletiva",
         // "imagem" => $A3,
     ]
@@ -118,19 +118,19 @@ $vetor_nvl2_A = [
 $vetor_nvl3_A1 = [
     [
         "id" => "UnifamiliarMista",
-        "onClick" => "blocos('UnifamiliarMista_', 'UnifamiliarMista')",
+        "onClick" => "runScript('UnifamiliarMista', 'UnifamiliarMista');",
         "titulo" => "Unifamiliar mista",
         // "imagem" => $UnifamiliarMista,
     ],
     [
         "id" => "Geminadas",
-        "onClick" => "blocos('Geminadas_', 'Geminadas')",
+        "onClick" => "runScript('Geminadas', 'UnifamiliarMista');",
         "titulo" => "Geminadas",
         // "imagem" => $Geminadas,
     ],
     [
         "id" => "Isoladas",
-        "onClick" => "blocos('Geminadas_', 'Isoladas')",
+        "onClick" => "runScript('Isoladas', 'UnifamiliarMista');",
         "titulo" => "Isoladas",
         // "imagem" => $Geminadas,
     ]
