@@ -209,7 +209,7 @@ $vetor_nvl2_E = [
     [
         "id" => "E2",
         "onClick" => "runScript('E2', 'E1');",
-        "titulo" => "E2 - Escola espacial",
+        "titulo" => "E2 - Escola especial",
         // "imagem" => $Geminadas,
     ],
     [
@@ -237,4 +237,73 @@ $vetor_nvl2_E = [
         // "imagem" => $Geminadas,
     ]
 ];
+
+$vetor_nvl2_F = [
+    [
+        "id" => "F1",
+        "onClick" => "runScript('F1', 'F1');",
+        "titulo" => "F1 - Local onde há objeto de valor inestimável",
+        // "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "F2",
+        "onClick" => "runScript('F2', 'F1');",
+        "titulo" => "F2 - Local religioso e velório",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F3",
+        "onClick" => "runScript('F3', 'F1');",
+        "titulo" => "F3 - Centro esportivo e de exebição",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F4",
+        "onClick" => "runScript('F4', 'F1');",
+        "titulo" => "F4 - Estação e terminal de passageiros",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F5",
+        "onClick" => "runScript('F5', 'F1');",
+        "titulo" => "F5 - Arte cênica e auditório",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F6",
+        "onClick" => "runScript('F6', 'F1');",
+        "titulo" => "F6 - Clubes sociais e diversão",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F7",
+        "onClick" => "runScript('F7', 'F1');",
+        "titulo" => "F7 - Contrução provisória",
+        // "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "F8",
+        "onClick" => "runScript('F8', 'F1');",
+        "titulo" => "F8 - Local para refeição",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F9",
+        "onClick" => "runScript('F9', 'F1');",
+        "titulo" => "F9 - Recreação pública",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F10",
+        "onClick" => "runScript('F10', 'F1');",
+        "titulo" => "F10 - Exposição de objetos ou animais",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "F11",
+        "onClick" => "runScript('F11', 'F1');",
+        "titulo" => "F11 - Boate",
+        // "imagem" => $Geminadas,
+    ]
+]
 ?>
