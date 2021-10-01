@@ -149,5 +149,26 @@ $vetor_nvl2_B = [
         "titulo" => "B2 - Hotel e residencial",
         // "imagem" => $Geminadas,
     ]
-]
+];
+
+$vetor_nvl2_C = [
+    [
+        "id" => "C1",
+        "onClick" => "runScript('C1', 'C1');",
+        "titulo" => "C1 - Comércio com baixa carga de incêndio",
+        // "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "C2",
+        "onClick" => "runScript('C2', 'C1');",
+        "titulo" => "C2 - Comércio com média e alta carga de incêndio",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "C3",
+        "onClick" => "runScript('C3', 'C1');",
+        "titulo" => "C3 - Shopping centers",
+        // "imagem" => $Geminadas,
+    ]
+];
 ?>
