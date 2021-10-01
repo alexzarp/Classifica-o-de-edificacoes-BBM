@@ -59,7 +59,7 @@
             include("views/E.php");
             include("views/F.php");
             include("views/G.php");
-            // include("views/H.php");
+            include("views/H.php");
             // include("views/I.php");
             // include("views/J.php");
             // include("views/K.php");

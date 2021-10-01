@@ -339,4 +339,43 @@ $vetor_nvl2_G = [
         // "imagem" => $Geminadas,
     ]
 ];
+
+$vetor_nvl2_H = [
+    [
+        "id" => "H1",
+        "onClick" => "runScript('H1', 'H1');",
+        "titulo" => "H1 - Hospital veterinário e assemelhados",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "H2",
+        "onClick" => "runScript('H2', 'H1');",
+        "titulo" => "H2 - Local onde pessoas requerem cuidados especiais por limitações físicas ou mentais",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "H3",
+        "onClick" => "runScript('H3', 'H1');",
+        "titulo" => "H3 - Hospitalar",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "H4",
+        "onClick" => "runScript('H4', 'H1');",
+        "titulo" => "H4 - Edificações Públicas",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "H5",
+        "onClick" => "runScript('H5', 'H1');",
+        "titulo" => "H5 - Local onde a liberdade das pessoas sofre restrições",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "H6",
+        "onClick" => "runScript('H6', 'H1');",
+        "titulo" => "H6 - Clínica e consultório médico e odontológico",
+        // "imagem" => $Geminadas,
+    ]
+];
 ?>
