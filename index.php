@@ -68,7 +68,27 @@
         ?>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-primeira-div">
+            <div class="bloco_anula">
+                <img src="assets/img/logo.png" alt="Logo bombeiros" id="logo2">
+                <div>
+                    <span class="bold tamanho1">Emergência</span><br>
+                    <span class="bold tamanho2 bloco_anula">193</span>
+                </div>
+            </div>
+
+            <span class="bloco_anula bold">CORPO DE BOMBEIROS MILITAR DE SANTA CATARINA</span>
+
+            <img src="assets/img/uffs.png" alt="UFFS logo" id="uffs" class="bloco_anula">
+        </div>
+
+        <div class="footer-segunda-div">            
+            <span class="white">Desenvolvido em parceria: <a class="limpa_formatacao bold" href="https://github.com/alexzarp">Alex Sandro Zarpelon</a> <img class="github" src="assets/img/github.svg">&nbsp; &nbsp; &nbsp; &nbsp;<a class="limpa_formatacao bold" href="https://github.com/Brunadisner">Bruna Gabriela Disner</a> <img class="github" src="assets/img/github.svg">&nbsp; &nbsp; &nbsp; &nbsp;<a class="limpa_formatacao bold" href="https://github.com/rflgf">Rafael Gama Fernandes</a> <img class="github" src="assets/img/github.svg"></span>
+    
+            <span class="white">Mantido por: T.I do 6° BBM</span>   
+        </div>
+    </footer>
 
     <script>
         function oculta_() {

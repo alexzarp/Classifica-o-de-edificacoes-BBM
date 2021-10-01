@@ -94,14 +94,21 @@ main {
     border-radius: 2vh;
     width: 10.4rem;
     height: 10.4rem; /* Não tenho cereteza como essas medidas vão se comportar */
+    transition: 0.2s;
+}
+
+.bloco:hover {
+    transform: scale(1.1);
+}
+
+.bloco:active {
+    transform: scale(0.9);
 }
 
 .bloco_anula {
     display: flex;
     align-items: center; 
     justify-content: center;
-    /* flex-wrap: wrap;
-    flex-direction: row; */
 }
 
 .bloco svg, .icones_centrais {
@@ -168,11 +175,50 @@ input[type=submit] {
     background-color: #DFDFDF;
     width: 120px;
 }
-
+/*footer*/
 footer {
-    background-color: #DFDFDF;
-    height: 50px;
+    background-color: #1D1919;
 }
+.footer-primeira-div {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 4fr 6fr 4fr;
+    justify-content: space-around;
+}
+#logo2 {
+    width: 150px;
+}
+#uffs {
+    width: 300px;
+    margin-top: 16px;
+}
+.bold {
+    font-weight: bolder;
+    color: white;
+}
+.white {
+    color: white;
+}
+.tamanho1 {
+    font-size: 20px;
+}
+.tamanho2 {
+    font-size: 60px;
+}
+.footer-segunda-div {
+    background-color: #292424;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.limpa_formatacao {
+    text-decoration: none;
+}
+.github {
+    width: 12px;
+}
+/*footer*/
 
 /* #A_, #A1_, #A2_, #A3_,#UnifamiliarMista_, #Geminadas_, #Isoladas_, #B_, #B1_, #B2_, #C_, #C1_, #C2_, #C3_,
 #D_, #D1_, #D2_, #D3_, #D4_, #E_, #E1_, #E2_, #E3_, #E4_, #E5_, #E6_, #F_, #F1_, #F2_, #F3_, #F4_, #F5_, #F6_,
