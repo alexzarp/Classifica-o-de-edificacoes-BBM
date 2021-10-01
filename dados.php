@@ -254,7 +254,7 @@ $vetor_nvl2_F = [
     [
         "id" => "F3",
         "onClick" => "runScript('F3', 'F1');",
-        "titulo" => "F3 - Centro esportivo e de exebição",
+        "titulo" => "F3 - Centro esportivo e de exibição",
         // "imagem" => $Geminadas,
     ],
     [
@@ -278,7 +278,7 @@ $vetor_nvl2_F = [
     [
         "id" => "F7",
         "onClick" => "runScript('F7', 'F1');",
-        "titulo" => "F7 - Contrução provisória",
+        "titulo" => "F7 - Construção provisória",
         // "imagem" => $UnifamiliarMista,
     ],
     [
@@ -305,5 +305,38 @@ $vetor_nvl2_F = [
         "titulo" => "F11 - Boate",
         // "imagem" => $Geminadas,
     ]
-]
+];
+
+$vetor_nvl2_G = [
+    [
+        "id" => "G1",
+        "onClick" => "runScript('G1', 'G1');",
+        "titulo" => "G1 - Garagem sem acesso de público e sem abastecimento",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "G2",
+        "onClick" => "runScript('G2', 'G1');",
+        "titulo" => "G2 - Garagem com acesso de público e sem abastecimento",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "G3",
+        "onClick" => "runScript('G3', 'G1');",
+        "titulo" => "G3 - Local dotado de abastecimento de combustível",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "G4",
+        "onClick" => "runScript('G4', 'G1');",
+        "titulo" => "G4 - Serviço de conservação, manutenção e reparos",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "G5",
+        "onClick" => "runScript('G5', 'G1');",
+        "titulo" => "G5 - Hangares",
+        // "imagem" => $Geminadas,
+    ]
+];
 ?>

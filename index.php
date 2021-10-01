@@ -58,7 +58,7 @@
             include("views/D.php");
             include("views/E.php");
             include("views/F.php");
-            // include("views/G.php");
+            include("views/G.php");
             // include("views/H.php");
             // include("views/I.php");
             // include("views/J.php");
@@ -69,5 +69,15 @@
     </main>
 
     <footer></footer>
+
+    <script>
+        function oculta_() {
+            var lista = document.getElementsByClassName("sub_bloco").length;
+            for (i = 0; i < lista; i++){
+                document.getElementsByClassName("sub_bloco")[i].style.display = 'none';                   
+            }
+        }
+        oculta_();
+    </script>
 </body>
 </html>
