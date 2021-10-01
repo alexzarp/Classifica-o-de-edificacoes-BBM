@@ -56,5 +56,5 @@ function runScript(value, reset) {
     ocultaSubblocos(reset_);
     resetaBlocos(reset);
     var value_ = value + '_';
-    blocos(value_, value)
+    blocos(value_, value);
 }

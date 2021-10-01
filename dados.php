@@ -197,5 +197,44 @@ $vetor_nvl2_D = [
         "titulo" => "D4 - Laboratório",
         // "imagem" => $Geminadas,
     ]
-]
+];
+
+$vetor_nvl2_E = [
+    [
+        "id" => "E1",
+        "onClick" => "runScript('E1', 'E1');",
+        "titulo" => "E1 - Escola em geral",
+        // "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "E2",
+        "onClick" => "runScript('E2', 'E1');",
+        "titulo" => "E2 - Escola espacial",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "E3",
+        "onClick" => "runScript('E3', 'E1');",
+        "titulo" => "E3 - Espaço para cultura física",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "E4",
+        "onClick" => "runScript('E4', 'E1');",
+        "titulo" => "E4 - Centro de treinamento profissional",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "E5",
+        "onClick" => "runScript('E5', 'E1');",
+        "titulo" => "E5 - Pré-escola",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "E6",
+        "onClick" => "runScript('E6', 'E1');",
+        "titulo" => "E6 - Escola para portadores de deficiência",
+        // "imagem" => $Geminadas,
+    ]
+];
 ?>
