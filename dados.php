@@ -10,84 +10,84 @@ $vetor_nvl1 = [
     ],
     [
         "id" => "B",
-        "onClick" => "blocos('B_', 'B')",
+        "onClick" => "runScript('B', 'A');",
         "titulo" => "B - Serviço de Hospedagem",
         "imagem" => $B,
         "alt" => "Hotel"
     ],
     [
         "id" => "C",
-        "onClick" => "blocos('C_', 'C')",
+        "onClick" => "runScript('C', 'A');",
         "titulo" => "C - Comercial",
         "imagem" => $C,
         "alt" => "Comercio"
     ],
     [
         "id" => "D",
-        "onClick" => "blocos('D_', 'D')",
+        "onClick" => "runScript('D', 'A');",
         "titulo" => "D - Serviço profissional",
         "imagem" => $D,
         "alt" => "Profissional"
     ],
     [
         "id" => "E",
-        "onClick" => "blocos('E_', 'E')",
+        "onClick" => "runScript('E', 'A');",
         "titulo" => "E - Educacional e<br>Cultura física",
         "imagem" => $E,
         "alt" => "Educacão"
     ],
     [
         "id" => "F",
-        "onClick" => "blocos('F_', 'F')",
+        "onClick" => "runScript('F', 'A');",
         "titulo" => "F - Local de Reunião de Público",
         "imagem" => $F,
         "alt" => "Reunião"
     ],
     [
         "id" => "G",
-        "onClick" => "blocos('G_', 'G')",
+        "onClick" => "runScript('G', 'A');",
         "titulo" => "G - Serviço automotivo e<br>assemelhados",
         "imagem" => $G,
         "alt" => "Carro"
     ],
     [
         "id" => "H",
-        "onClick" => "blocos('H_', 'H')",
+        "onClick" => "runScript('H', 'A');",
         "titulo" => "H - Serviço de saúde e<br>institucional",
         "imagem" => $H,
         "alt" => "Hospital"
     ],
     [
         "id" => "I",
-        "onClick" => "blocos('I_', 'I')",
+        "onClick" => "runScript('I', 'A');",
         "titulo" => "I - Indústria",
         "imagem" => $I,
         "alt" => "Indústria"
     ],
     [
         "id" => "J",
-        "onClick" => "blocos('J_', 'J')",
+        "onClick" => "runScript('J', 'A');",
         "titulo" => "J - Depósito",
         "imagem" => $J,
         "alt" => "Indústria"
     ],
     [
         "id" => "K",
-        "onClick" => "blocos('K_', 'K')",
+        "onClick" => "runScript('K', 'A');",
         "titulo" => "K - Energia",
         "imagem" => $K,
         "alt" => "Energia"
     ],
     [
         "id" => "L",
-        "onClick" => "blocos('L_', 'L')",
+        "onClick" => "runScript('L', 'A');",
         "titulo" => "L - Explosivo",
         "imagem" => $L,
         "alt" => "Explosivo"
     ],
     [
         "id" => "M",
-        "onClick" => "blocos('M_', 'M')",
+        "onClick" => "runScript('M', 'A');",
         "titulo" => "M - Especial",
         "imagem" => $M,
         "alt" => "Especial"
@@ -136,4 +136,18 @@ $vetor_nvl3_A1 = [
     ]
 ];
 
+$vetor_nvl2_B = [
+    [
+        "id" => "B1",
+        "onClick" => "runScript('B1', 'B1');",
+        "titulo" => "B1 - Hotel e assemelhado",
+        // "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "B2",
+        "onClick" => "runScript('B2', 'B1');",
+        "titulo" => "B2 - Hotel e residencial",
+        // "imagem" => $Geminadas,
+    ]
+]
 ?>

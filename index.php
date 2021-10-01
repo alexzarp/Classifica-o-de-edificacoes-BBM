@@ -13,6 +13,14 @@
     <script src="assets/JS/funcoes_complementares.js" defer></script>
     <?php include_once("dados.php")?>
 </head>
+<noscript>
+    <h1 id="nos">Seu navegador não possui suporte ao JavaScript, por favor o habilite ou mude de navegador.</h1>
+    <style>
+        #nos {
+            background-color: yellow;
+        }
+    </style>
+</noscript>
 <body>
     <header>
         <div>
@@ -45,7 +53,7 @@
         
         <?php
             include("views/A.php");
-            // include("views/BB.php");
+            include("views/B.php");
             // include("views/CC.php");
             // include("views/DD.php");
             // include("views/EE.php");
