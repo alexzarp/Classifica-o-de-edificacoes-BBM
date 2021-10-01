@@ -55,7 +55,7 @@
             include("views/A.php");
             include("views/B.php");
             include("views/C.php");
-            // include("views/D.php");
+            include("views/D.php");
             // include("views/E.php");
             // include("views/F.php");
             // include("views/G.php");

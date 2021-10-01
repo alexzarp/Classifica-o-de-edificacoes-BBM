@@ -171,4 +171,31 @@ $vetor_nvl2_C = [
         // "imagem" => $Geminadas,
     ]
 ];
+
+$vetor_nvl2_D = [
+    [
+        "id" => "D1",
+        "onClick" => "runScript('D1', 'D1');",
+        "titulo" => "D1 - Local para prestação de serviço profissional ou condução de negócios",
+        // "imagem" => $UnifamiliarMista,
+    ],
+    [
+        "id" => "D2",
+        "onClick" => "runScript('D2', 'D1');",
+        "titulo" => "D2 - Agência bancária",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "D3",
+        "onClick" => "runScript('D3', 'D1');",
+        "titulo" => "D3 - Serviço de reparação",
+        // "imagem" => $Geminadas,
+    ],
+    [
+        "id" => "D4",
+        "onClick" => "runScript('D4', 'D1');",
+        "titulo" => "D4 - Laboratório",
+        // "imagem" => $Geminadas,
+    ]
+]
 ?>
