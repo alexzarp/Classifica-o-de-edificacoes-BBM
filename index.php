@@ -24,7 +24,7 @@
 <body>
     <header>
         <div>
-            <img src="assets/img/logo.png" alt="Logo Bombeiros" id="logo" class="anima">
+            <a href="/"><img src="assets/img/logo.png" alt="Logo Bombeiros" id="logo" class="anima"></a>
             <h1 class="titulo_header">Sistema de Classificação de Edificações</h1>
             <img src="assets/img/menu.svg" alt="Botão Menu" id="botao_menu" class="anima">
         </div>
@@ -71,7 +71,7 @@
     <footer>
         <div class="footer-primeira-div">
             <div class="bloco_anula">
-                <img src="assets/img/logo.png" alt="Logo bombeiros" id="logo2">
+                <a href="https://www.cbm.sc.gov.br/"><img src="assets/img/logo.png" alt="Logo bombeiros" id="logo2"></a>
                 <div>
                     <span class="bold tamanho1">Emergência</span><br>
                     <span class="bold tamanho2 bloco_anula">193</span>
@@ -80,7 +80,7 @@
 
             <span class="bloco_anula bold">CORPO DE BOMBEIROS MILITAR DE SANTA CATARINA</span>
 
-            <img src="assets/img/uffs.png" alt="UFFS logo" id="uffs" class="bloco_anula">
+            <a href="https://www.uffs.edu.br/"><img src="assets/img/uffs.png" alt="UFFS logo" id="uffs" class="bloco_anula"></a>
         </div>
 
         <div class="footer-segunda-div">            

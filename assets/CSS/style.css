@@ -156,9 +156,10 @@ form {
     font-weight: 900;
     font-size: 1.2rem;
 }
-
-.anima:hover {
+.anima {
     transition: 0.2s;
+}
+.anima:hover {
     transform: scale(1.2);
 }
 /* input[type=submit] input[type=button] input[type=email] input[type=password] input[type=tel] textarea input[type=reset] input[type=date] select*/
