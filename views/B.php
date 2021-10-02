@@ -6,7 +6,6 @@
         ?>
             <div id="<?=$nvl2B["id"]?>" class="bloco bloco_anula" onclick="<?=$nvl2B["onClick"]?>">
                 <h4 class="titulo_bloco"><?=$nvl2B["titulo"]?></h4>
-                <?= $nvl2B["imagem"]?>
             </div>
         <?php
         }
