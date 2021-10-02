@@ -378,4 +378,134 @@ $vetor_nvl2_H = [
         // "imagem" => $Geminadas,
     ]
 ];
+
+$vetor_nvl2_I = [
+    [
+        "id" => "I1",
+        "onClick" => "runScript('I1', 'I1');",
+        "titulo" => "I1 - Locais onde a carga de incêndio não chega a 300 MJ/m2",
+    ],
+    [
+        "id" => "I2",
+        "onClick" => "runScript('I2', 'I1');",
+        "titulo" => "I2 - Locais com carga de incêndio entre 300 a 1.200 MJ/m2",
+    ],
+    [
+        "id" => "I3",
+        "onClick" => "runScript('I3', 'I1');",
+        "titulo" => "I3 - Locais com carga de incêndio superior a 1.200 MJ/m2",
+    ]
+];
+
+$vetor_nvl2_J = [
+    [
+        "id" => "J1",
+        "onClick" => "runScript('J1', 'J1');",
+        "titulo" => "J1 - Depósitos de material incombustível",
+    ],
+    [
+        "id" => "J2",
+        "onClick" => "runScript('J2', 'J1');",
+        "titulo" => "J2 - Depósito com baixa carga de incêndio",
+    ],
+    [
+        "id" => "J3",
+        "onClick" => "runScript('J3', 'J1');",
+        "titulo" => "J3 - Depósito com média carga de incêndio",
+    ],
+    [
+        "id" => "J4",
+        "onClick" => "runScript('J4', 'J1');",
+        "titulo" => "J4 - Depósito com alta carga de incêndio",
+    ]
+];
+
+$vetor_nvl2_K = [
+    [
+        "id" => "K1",
+        "onClick" => "runScript('K1', 'K1');",
+        "titulo" => "K1 - Central de transmissão e distribuição de energia",
+    ],
+    [
+        "id" => "K2",
+        "onClick" => "runScript('K2', 'K1');",
+        "titulo" => "K2 - Usinas",
+    ]
+];
+
+$vetor_nvl2_L = [
+    [
+        "id" => "L1",
+        "onClick" => "runScript('L1', 'L1');",
+        "titulo" => "L1 - Comércio",
+    ],
+    [
+        "id" => "L2",
+        "onClick" => "runScript('L2', 'L1');",
+        "titulo" => "L2 - Indústria",
+    ],
+    [
+        "id" => "L3",
+        "onClick" => "runScript('L3', 'L1');",
+        "titulo" => "L3 - Depósito",
+    ]
+];
+
+$vetor_nvl2_M = [
+    [
+        "id" => "M1",
+        "onClick" => "runScript('M1', 'M1');",
+        "titulo" => "M1 - Túnel",
+    ],
+    [
+        "id" => "M2",
+        "onClick" => "runScript('M2', 'M1');",
+        "titulo" => "M2 - Líquido ou gás inflamáveis ou combustíveis",
+    ],
+    [
+        "id" => "M3",
+        "onClick" => "runScript('M3', 'M1');",
+        "titulo" => "M3 - Central telefônica, TV, rádio, computação",
+    ],
+    [
+        "id" => "M4",
+        "onClick" => "runScript('M4', 'M1');",
+        "titulo" => "M4 - Canteiro de Obras",
+    ],
+    [
+        "id" => "M5",
+        "onClick" => "runScript('M5', 'M1');",
+        "titulo" => "M5 - Silos",
+    ],
+    [
+        "id" => "M6",
+        "onClick" => "runScript('M6', 'M1');",
+        "titulo" => "M6 - Floresta nativa ou de cultivo",
+    ],
+    [
+        "id" => "M7",
+        "onClick" => "runScript('M7', 'M1');",
+        "titulo" => "M7 - Pátio de contêineres",
+    ],
+    [
+        "id" => "M8",
+        "onClick" => "runScript('M8', 'M1');",
+        "titulo" => "M8 - Posto de revenda de GLP risco I",
+    ],
+    [
+        "id" => "M9",
+        "onClick" => "runScript('M9', 'M1');",
+        "titulo" => "M9 - Posto de revenda de GLP risco II",
+    ],
+    [
+        "id" => "M10",
+        "onClick" => "runScript('M10', 'M1');",
+        "titulo" => "M10 - Minas subterrâneas",
+    ],
+    [
+        "id" => "M11",
+        "onClick" => "runScript('M11', 'M1');",
+        "titulo" => "M11 - Atividades agropastoris e Olarias",
+    ]
+];
 ?>
