@@ -44,6 +44,7 @@
         ?>
             <div id="<?=$nvl1["id"]?>" class="bloco" onclick="<?=$nvl1["onClick"]?>">
                 <h4 class="titulo_bloco"><?=$nvl1["titulo"]?></h4>
+                <?= $nvl1["imagem"]?>
             </div>
         <?php
         }
