@@ -130,6 +130,10 @@ main {
     flex-direction: row;
 }
 
+.sub_bloco {
+    display: none;
+}
+
 .form_central div {
     text-align: center;
 }
@@ -236,4 +240,21 @@ footer {
 
 svg {
     color: black;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #292424;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #494747;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }

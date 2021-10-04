@@ -90,7 +90,7 @@
         </div>
     </footer>
 
-    <script>
+    <!-- <script>
         function oculta_() {
             var lista = document.getElementsByClassName("sub_bloco").length;
             for (i = 0; i < lista; i++){
@@ -98,6 +98,6 @@
             }
         }
         oculta_();
-    </script>
+    </script> -->
 </body>
 </html>
