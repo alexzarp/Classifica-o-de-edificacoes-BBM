@@ -58,4 +58,25 @@ function runScript(value, reset) {
     resetaBlocos(reset);
     var value_ = value + '_';
     blocos(value_, value);
+    animaDiv(value_);
+}
+
+function animaDiv(value) {
+    document.getElementById(value).scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'center'
+        }
+    );
+    var altura = document.getElementById(value).clientHeight;
+    altura = altura.toString();
+    document.getElementById(value).animate([
+        // keyframes
+        {height: '0px', opacity: '0'},
+        {opacity: '0'},
+        {height: altura+'px', opacity: '1'}
+      ], {
+        // timing options
+        duration: 500,
+      });
 }

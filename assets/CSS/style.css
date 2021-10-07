@@ -95,6 +95,7 @@ main {
     width: 10.4rem;
     height: 10.4rem; /* Não tenho cereteza como essas medidas vão se comportar */
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .bloco:hover {
@@ -132,7 +133,21 @@ main {
 
 .sub_bloco {
     display: none;
+    /* animation-name: surgimento-subloco;
+    animation-duration: 0.5s; */
 }
+/* @keyframes surgimento-subloco {
+    0% {
+        height: 0vh;
+    }
+    0%, 50% {
+        opacity: 0;
+    }
+    100% {
+        height: 70vh;
+        opacity: 1;
+    }
+} */
 
 .form_central div {
     text-align: center;

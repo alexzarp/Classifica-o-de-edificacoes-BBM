@@ -84,7 +84,7 @@
         </div>
 
         <div class="footer-segunda-div">            
-            <span class="white">Desenvolvido em parceria: <a class="limpa_formatacao bold" href="https://github.com/alexzarp">Alex Sandro Zarpelon <img class="github" src="assets/img/github.svg"></a>&nbsp; &nbsp;<a class="limpa_formatacao bold" href="https://github.com/Brunadisner">Bruna Gabriela Disner <img class="github" src="assets/img/github.svg"></a>&nbsp; &nbsp;<a class="limpa_formatacao bold" href="https://github.com/rflgf">Rafael Gama Fernandes <img class="github" src="assets/img/github.svg"></a></span>
+            <span class="white">Desenvolvido em parceria: <a class="limpa_formatacao bold" href="https://github.com/alexzarp">Alex Sandro Zarpelon <img class="github" src="assets/img/github.svg"></a>&nbsp; <a class="limpa_formatacao bold" href="https://github.com/Brunadisner">Bruna Gabriela Disner <img class="github" src="assets/img/github.svg"></a>&nbsp; <a class="limpa_formatacao bold" href="https://github.com/rflgf">Rafael Gama Fernandes <img class="github" src="assets/img/github.svg"></a></span>
     
             <span class="white">Mantido por: T.I do 6° BBM</span>   
         </div>
