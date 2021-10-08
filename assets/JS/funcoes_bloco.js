@@ -73,8 +73,8 @@ function animaDiv(value) {
     document.getElementById(value).animate([
         // keyframes
         {height: '0px', opacity: '0'},
-        {opacity: '0'},
-        {height: altura+'px', opacity: '1'}
+        {opacity: '0', transform: 'scale(0.9)'},
+        {height: altura+'px', opacity: '1', transform: 'scale(1.0)'}
       ], {
         // timing options
         duration: 500,

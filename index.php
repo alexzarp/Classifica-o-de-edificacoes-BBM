@@ -77,8 +77,8 @@
                     <span class="bold tamanho2 bloco_anula">193</span>
                 </div>
             </div>
-
-            <span class="bloco_anula bold">CORPO DE BOMBEIROS MILITAR DE SANTA CATARINA</span>
+            
+            <h3 class="bloco_anula bold">CORPO DE BOMBEIROS MILITAR DE SANTA CATARINA</h3>
 
             <a href="https://www.uffs.edu.br/"><img src="assets/img/uffs.png" alt="UFFS logo" id="uffs" class="bloco_anula"></a>
         </div>
