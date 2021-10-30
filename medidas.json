@@ -1,0 +1,18 @@
+[
+	{
+		"nome"	: "Acesso de viatura na edificação (qualquer área)",
+		"IN"	: "35"
+	},
+	{
+		"nome"	: "Isolamento entre edificações (qualquer área)",
+		"IN"	: "14"
+	},
+	{
+		"nome"	: "Gás combustível",
+		"IN"	: "8"
+	},
+	{
+		"nome"	: "Proteção estrutural (TRRF)",
+		"IN"	: "14"
+	}
+]

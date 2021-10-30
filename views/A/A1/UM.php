@@ -5,7 +5,7 @@
             <h1>Informe a altura da edificação</h1>
             <form>
                 <input type="text" id="altura" name="altura" placeholder="Digite a altura"><br>
-                <input type="submit" value="Submeter">
+                <?php include("submissao.php") ?>
             </form>
         </div>
     </div>

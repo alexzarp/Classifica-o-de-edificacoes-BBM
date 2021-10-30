@@ -4,15 +4,17 @@ roxo = "#A438E6";
 branco = "#FFFFFF";
 preto = "#000000";
 
+let niveis = Array();
+
 function resetaBlocos(comeco) {
-    var lista = document.getElementsByClassName("bloco").length;
-    for (i = 0; i < lista; i++){
-        if (document.getElementsByClassName("bloco")[i].id == comeco) {
-            for (j = i; j < lista; j++) {
-                document.getElementsByClassName("bloco")[j].style.backgroundColor = "#DFDFDF";
-                document.getElementsByClassName("bloco")[j].querySelector("h4").style.color = "inherit";
-                if (document.getElementsByClassName("bloco")[j].querySelector("svg") != null) {
-                    document.getElementsByClassName("bloco")[j].querySelector("svg").style.color = preto;
+    let blocos = document.getElementsByClassName("bloco");
+    for (i = 0; i < blocos.length; i++){
+        if (blocos[i].id == comeco) {
+            for (j = i; j < blocos.length; j++) {
+                blocos[j].style.backgroundColor = "#DFDFDF";
+                blocos[j].querySelector("h4").style.color = "inherit";
+                if (blocos[j].querySelector("svg") != null) {
+                    blocos[j].querySelector("svg").style.color = preto;
                 }
             }
             break;
@@ -21,11 +23,11 @@ function resetaBlocos(comeco) {
 }
 
 function ocultaSubblocos(comeco) {
-    var lista = document.getElementsByClassName("sub_bloco").length;
-    for (i = 0; i < lista; i++){
-        if (document.getElementsByClassName("sub_bloco")[i].id == comeco) {
-            for (j = i; j < lista; j++) {
-                document.getElementsByClassName("sub_bloco")[j].style.display = 'none';
+    let sub_blocos = document.getElementsByClassName("sub_bloco");
+    for (i = 0; i < sub_blocos.length; i++){
+        if (sub_blocos[i].id == comeco) {
+            for (j = i; j < sub_blocos.length; j++) {
+                sub_blocos[j].style.display = 'none';
             }
             break;
         }
@@ -42,6 +44,7 @@ function ocultaSubblocos(comeco) {
 //     }
 // }
 
+// expande um "nível" do questionário.
 function blocos(value_, value) {
     document.getElementById(value_).style.display = 'inherit';
 
@@ -52,7 +55,10 @@ function blocos(value_, value) {
     }
 }
 
-function runScript(value, reset) {
+function runScript(nivel, value, reset) {
+
+    niveis[nivel] = value;
+
     var reset_ = reset + '_';
     ocultaSubblocos(reset_);
     resetaBlocos(reset);
@@ -79,4 +85,27 @@ function animaDiv(value) {
         // timing options
         duration: 500,
       });
+}
+
+// adiciona informações sobre os níveis no formulário antes de fazer a requisição.
+var completaForm = (botao) => {
+    let formElement = botao.parentElement;
+    let inputs = formElement.children;
+
+    // remove níveis caso já existam.
+    for (let i = 0; i < inputs.length; i++)
+        if(inputs[i].classList.contains('hidden_input'))
+            inputs[i].remove();
+
+    for(nivel in niveis) {
+        let novoInput = document.createElement("input");
+        novoInput.type = "text";
+        novoInput.name = nivel;
+        novoInput.value = niveis[nivel];
+        novoInput.classList.add('hidden_input');
+        novoInput.hidden = true;
+        formElement.appendChild(novoInput);
+    }
+
+    formElement.submit();
 }

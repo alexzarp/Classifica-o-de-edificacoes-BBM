@@ -4,7 +4,7 @@
         <?php
         foreach ($vetor_nvl2_F as $nvl2F) {
         ?>
-            <div id="<?=$nvl2F["id"]?>" class="bloco bloco_anula" onclick="<?=$nvl2F["onClick"]?>">
+            <div id="<?=$nvl2F["id"]?>" class="bloco bloco_anula" onclick="runScript(2, '<?=$nvl2F["id"]?>', 'F1')">
                 <h4 class="titulo_bloco"><?=$nvl2F["titulo"]?></h4>
             </div>
         <?php

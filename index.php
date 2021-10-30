@@ -38,11 +38,11 @@
     <main>
         <h1 class="vermelho">Escolha a classificação de ocupação:</h1> <br>
 
-        <div class="grade">
+        <div id="nvl1" class="grade">
         <?php
         foreach ($vetor_nvl1 as $nvl1) {
         ?>
-            <div id="<?=$nvl1["id"]?>" class="bloco" onclick="<?=$nvl1["onClick"]?>">
+            <div id="<?=$nvl1["id"]?>" class="bloco" onclick="runScript(1, '<?=$nvl1["id"]?>', 'A')">
                 <h4 class="titulo_bloco"><?=$nvl1["titulo"]?></h4>
                 <?= $nvl1["imagem"]?>
             </div>
@@ -65,6 +65,10 @@
             include("views/K.php");
             include("views/L.php");
             include("views/M.php");
+        
+        if(isset($_GET["1"])) {
+            include("form.php");
+        }
         ?>
     </main>
 
