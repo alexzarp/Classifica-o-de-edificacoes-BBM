@@ -7,6 +7,7 @@
             $novasMedidas[] = 3;
             return array_merge($medidas, $novasMedidas);
         }
-        return A2($medidas);
+        // return A2($medidas);
+        return null;
     }
 ?>

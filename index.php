@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shorcut icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <script src="assets/JS/funcoes_bloco.js" defer></script>
+    <!-- <script src="assets/JS/funcoes_bloco.js" defer></script> -->
     <script src="assets/JS/funcoes_complementares.js" defer></script>
     <?php include_once("dados.php")?>
 </head>
@@ -94,14 +94,19 @@
         </div>
     </footer>
 
-    <!-- <script>
-        function oculta_() {
-            var lista = document.getElementsByClassName("sub_bloco").length;
-            for (i = 0; i < lista; i++){
-                document.getElementsByClassName("sub_bloco")[i].style.display = 'none';                   
+    <script src="assets/JS/funcoes_bloco.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);        
+        var num = 1;
+        while (true) {
+            const myParam = urlParams.get(num.toString());
+            if (myParam == null) {
+                break
             }
+            // console.log(myParam);
+            runScript(0, myParam, myParam);
+            num++
         }
-        oculta_();
-    </script> -->
+    </script>
 </body>
 </html>

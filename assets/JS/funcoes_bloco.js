@@ -34,16 +34,6 @@ function ocultaSubblocos(comeco) {
     }
 }
 
-// function blocos(value_, value) {
-//     document.getElementById(value_).style.display = 'inherit';
-
-//     document.getElementById(value).style.backgroundColor = azul;
-//     document.getElementById(value).querySelector("h4").style.color = branco;
-//     if (document.getElementById(value).querySelector("svg") != null) {
-//         document.getElementById(value).querySelector("svg").style.color = branco;
-//     }
-// }
-
 // expande um "nível" do questionário.
 function blocos(value_, value) {
     document.getElementById(value_).style.display = 'inherit';
@@ -56,14 +46,17 @@ function blocos(value_, value) {
 }
 
 function runScript(nivel, value, reset) {
-
-    niveis[nivel] = value;
-
+    if (nivel != 0) {
+        niveis[nivel] = value;
+    }
     var reset_ = reset + '_';
     ocultaSubblocos(reset_);
     resetaBlocos(reset);
     var value_ = value + '_';
     blocos(value_, value);
+    // if (nivel != 0) {
+    //     animaDiv(value_);
+    // }
     animaDiv(value_);
 }
 
