@@ -70,6 +70,22 @@
             include("form.php");
         }
         ?>
+
+        <div id="Medidas" class="sub_bloco">
+            <div class="linha_divisoria"></div>
+            <div class="form_central">
+                <div>
+                    <h1 class="vermelho">Medidas de segurança contra incêndio:</h1>
+                    <ul>
+                        <li>Medida</li>
+                        <li>Medida</li>
+                        <li>Medida</li>
+                    </ul>
+                    <input type="button" class="blotao_medidas verde_claro">
+                    <input type="button" class="blotao_medidas roxo_claro">
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -114,17 +130,26 @@
         let pavimentos = urlParams.get('pavimentos');
         let glp = urlParams.get('glp');
 
-        if (altura) {
-            document.getElementById(myParam+'_').querySelector('#altura').value = altura;
-        }
-        if (area) {
-            document.getElementById(myParam+'_').querySelector('#area').value = area;
-        }
-        if (pavimentos) {
-            document.getElementById(myParam+'_').querySelector('#pavimentos').value = pavimentos;
-        }
-        if (glp) {
-            document.getElementById(myParam+'_').querySelector('#glp').value = glp;
+        if ((altura || area || pavimentos || glp) != null){
+            if (altura) {
+                document.getElementById(myParam+'_').querySelector('#altura').value = altura;
+            }
+            if (area) {
+                document.getElementById(myParam+'_').querySelector('#area').value = area;
+            }
+            if (pavimentos) {
+                document.getElementById(myParam+'_').querySelector('#pavimentos').value = pavimentos;
+            }
+            if (glp) {
+                document.getElementById(myParam+'_').querySelector('#glp').value = glp;
+            }
+            document.getElementById('Medidas').style.display = 'inherit';
+            document.getElementById('Medidas').scrollIntoView({
+                behavior: 'instant',
+                block: 'center',
+                inline: 'center'
+                }
+            );
         }
     </script>
 </body>

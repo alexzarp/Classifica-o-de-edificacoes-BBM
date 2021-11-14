@@ -273,3 +273,11 @@ svg {
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
+
+.verde_claro {
+    background-color: #00E031;
+}
+
+.roxo_claro {
+    background-color: #A438E6;
+}

@@ -54,10 +54,9 @@ function runScript(nivel, value, reset) {
     resetaBlocos(reset);
     var value_ = value + '_';
     blocos(value_, value);
-    // if (nivel != 0) {
-    //     animaDiv(value_);
-    // }
-    animaDiv(value_);
+    if (nivel != 0) {
+        animaDiv(value_);
+    }
 }
 
 function animaDiv(value) {
