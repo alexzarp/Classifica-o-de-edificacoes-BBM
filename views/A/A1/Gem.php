@@ -4,7 +4,7 @@
         <div>
             <h1>Há GLP(Gás)?</h1>
             <form>
-                <select name="altura" id="altura">
+                <select name="glp" id="glp">
                     <option value="none"></option>
                     <option value="1">Sim</option>
                     <option value="0">Não</option>

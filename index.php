@@ -99,13 +99,32 @@
         const urlParams = new URLSearchParams(window.location.search);        
         var num = 1;
         while (true) {
-            const myParam = urlParams.get(num.toString());
+            var myParam = urlParams.get(num.toString());
             if (myParam == null) {
+                myParam = urlParams.get((num-1).toString());
                 break
             }
             // console.log(myParam);
             runScript(0, myParam, myParam);
             num++
+        }
+        // para cada possível form, uma variável
+        let altura = urlParams.get('altura');
+        let area = urlParams.get('area');
+        let pavimentos = urlParams.get('pavimentos');
+        let glp = urlParams.get('glp');
+
+        if (altura) {
+            document.getElementById(myParam+'_').querySelector('#altura').value = altura;
+        }
+        if (area) {
+            document.getElementById(myParam+'_').querySelector('#area').value = area;
+        }
+        if (pavimentos) {
+            document.getElementById(myParam+'_').querySelector('#pavimentos').value = pavimentos;
+        }
+        if (glp) {
+            document.getElementById(myParam+'_').querySelector('#glp').value = glp;
         }
     </script>
 </body>
