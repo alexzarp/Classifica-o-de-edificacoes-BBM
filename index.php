@@ -76,13 +76,21 @@
             <div class="form_central">
                 <div>
                     <h1 class="vermelho">Medidas de segurança contra incêndio:</h1>
-                    <ul>
+                    <ul class="ul_reset">
                         <li>Medida</li>
-                        <li>Medida</li>
-                        <li>Medida</li>
+                        <li>Medidasss</li>
+                        <li>Medidadsdsdds</li>
                     </ul>
-                    <input type="button" class="blotao_medidas verde_claro">
-                    <input type="button" class="blotao_medidas roxo_claro">
+                    <div class="form_central">
+                        <button class="verde_claro botao_medidas">
+                            <img src="assets/img/pdf.svg" alt="PDF" class="imagem_centro" id="pdf">
+                            <span>Exportar PDF</span>
+                        </button>
+                        <button class="roxo_claro botao_medidas" onclick="window.location.href = '/';">
+                            <img src="assets/img/x.svg" alt="X" class="imagem_centro">
+                            <span>Começar novamente</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
