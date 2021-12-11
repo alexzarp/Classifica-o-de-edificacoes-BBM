@@ -182,7 +182,7 @@ form {
     transform: scale(1.2);
 }
 /* input[type=submit] input[type=button] input[type=email] input[type=password] input[type=tel] textarea input[type=reset] input[type=date] select*/
-input[type=text], input[type=button], select, button {
+input[type=text], input[type=button], select, button, input[type=number] {
     /* border: border-width border-style border-color  */
     border: 2px solid #DFDFDF;
     border-radius: 50vh;

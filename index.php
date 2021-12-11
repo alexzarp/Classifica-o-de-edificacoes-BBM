@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <!-- <script src="assets/JS/funcoes_bloco.js" defer></script> -->
     <script src="assets/JS/funcoes_complementares.js" defer></script>
+    <script src="assets/JS/processamento.js" defer></script>
     <?php include_once("dados.php")?>
 </head>
 <noscript>
@@ -120,45 +121,46 @@
 
     <script src="assets/JS/funcoes_bloco.js"></script>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);        
-        var num = 1;
-        while (true) {
-            var myParam = urlParams.get(num.toString());
-            if (myParam == null) {
-                myParam = urlParams.get((num-1).toString());
-                break
-            }
-            // console.log(myParam);
-            runScript(0, myParam, myParam);
-            num++
-        }
-        // para cada possível form, uma variável
-        let altura = urlParams.get('altura');
-        let area = urlParams.get('area');
-        let pavimentos = urlParams.get('pavimentos');
-        let glp = urlParams.get('glp');
+        // essa parte faz a seleção automática dos blocos via parâmetros no link
+        // const urlParams = new URLSearchParams(window.location.search);        
+        // var num = 1;
+        // while (true) {
+        //     var myParam = urlParams.get(num.toString());
+        //     if (myParam == null) {
+        //         myParam = urlParams.get((num-1).toString());
+        //         break
+        //     }
+        //     // console.log(myParam);
+        //     runScript(0, myParam, myParam);
+        //     num++
+        // }
+        // para cada possível form, uma variável || precisa ser global
+        // var altura = urlParams.get('altura');
+        // var area = urlParams.get('area');
+        // var pavimentos = urlParams.get('pavimentos');
+        // var glp = urlParams.get('glp');
 
-        if ((altura || area || pavimentos || glp) != null){
-            if (altura) {
-                document.getElementById(myParam+'_').querySelector('#altura').value = altura;
-            }
-            if (area) {
-                document.getElementById(myParam+'_').querySelector('#area').value = area;
-            }
-            if (pavimentos) {
-                document.getElementById(myParam+'_').querySelector('#pavimentos').value = pavimentos;
-            }
-            if (glp) {
-                document.getElementById(myParam+'_').querySelector('#glp').value = glp;
-            }
-            document.getElementById('Medidas').style.display = 'inherit';
-            document.getElementById('Medidas').scrollIntoView({
-                behavior: 'instant',
-                block: 'center',
-                inline: 'center'
-                }
-            );
-        }
+        // if ((altura || area || pavimentos || glp) != null){
+        //     if (altura) {
+        //         document.getElementById(myParam+'_').querySelector('#altura').value = altura;
+        //     }
+        //     if (area) {
+        //         document.getElementById(myParam+'_').querySelector('#area').value = area;
+        //     }
+        //     if (pavimentos) {
+        //         document.getElementById(myParam+'_').querySelector('#pavimentos').value = pavimentos;
+        //     }
+        //     if (glp) {
+        //         document.getElementById(myParam+'_').querySelector('#glp').value = glp;
+        //     }
+        //     document.getElementById('Medidas').style.display = 'inherit';
+        //     document.getElementById('Medidas').scrollIntoView({
+        //         behavior: 'instant',
+        //         block: 'center',
+        //         inline: 'center'
+        //         }
+        //     );
+        // }
     </script>
 </body>
 </html>

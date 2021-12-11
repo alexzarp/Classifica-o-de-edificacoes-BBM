@@ -4,11 +4,12 @@
         <div>
             <h1>Informar a área, altura e o número de pavimentos</h1>
             <form>
-                <input type="text" id="area" name="area" placeholder="Digite a área"><br>
-                <input type="text" id="altura" name="altura" placeholder="Digite a altura"><br>
-                <input type="text" id="pavimentos" name="pavimentos" placeholder="Digite o número de pavimentos"><br>
-                <?php include("submissao.php") ?>
-            </form>
+                <input type="number" id="area" name="area" placeholder="Digite a área em metros²"><br>
+                <input type="number" id="altura" name="altura" placeholder="Digite a altura em metros"><br>
+                <input type="number" id="pavimentos" name="pavimentos" placeholder="Digite o número de pavimentos"><br>
+                <!-- <?php include("submissao.php") ?> -->
+            </form><br>
+            <button onclick="B2()">Submeter</button>
         </div>
     </div>
 </div>

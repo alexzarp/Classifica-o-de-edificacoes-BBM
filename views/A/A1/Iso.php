@@ -9,7 +9,8 @@
                     <option value="1">Sim</option>
                     <option value="0">Não</option>
                 </select><br>
-                <?php include("submissao.php") ?>
+                <!-- <?php include("submissao.php") ?> -->
+                <button>Submeter</button>
             </form>
         </div>
     </div>
