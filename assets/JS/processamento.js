@@ -65,7 +65,7 @@ function B(num) {
             }
         }
     
-        else if (area > 750 && altura > 12) {
+        else if (area > 750 || altura > 12) {
             if (pavimentos == 1) { //térrea
                 ['Acesso de viatura na edificação', '35', null],
                 ['Alarme de incêndio', '12', null],

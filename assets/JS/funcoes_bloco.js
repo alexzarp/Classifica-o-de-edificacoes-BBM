@@ -4,7 +4,7 @@ roxo = "#A438E6";
 branco = "#FFFFFF";
 preto = "#000000";
 
-let niveis = Array();
+
 
 function resetaBlocos(comeco) {
     document.getElementById('Medidas').style.display = 'none';
@@ -47,9 +47,7 @@ function blocos(value_, value) {
 }
 
 function runScript(nivel, value, reset) {
-    if (nivel != 0) {
-        niveis[nivel] = value;
-    }
+    
     var reset_ = reset + '_';
     ocultaSubblocos(reset_);
     resetaBlocos(reset);
@@ -80,28 +78,6 @@ function animaDiv(value) {
       });
 }
 
-// adiciona informações sobre os níveis no formulário antes de fazer a requisição.
-var completaForm = (botao) => {
-    let formElement = botao.parentElement;
-    let inputs = formElement.children;
-
-    // remove níveis caso já existam.
-    for (let i = 0; i < inputs.length; i++)
-        if(inputs[i].classList.contains('hidden_input'))
-            inputs[i].remove();
-
-    for(nivel in niveis) {
-        let novoInput = document.createElement("input");
-        novoInput.type = "text";
-        novoInput.name = nivel;
-        novoInput.value = niveis[nivel];
-        novoInput.classList.add('hidden_input');
-        novoInput.hidden = true;
-        formElement.appendChild(novoInput);
-    }
-
-    formElement.submit();
-}
 
 function dataInject(medidas) {
     let string = '<tr><th>Medida</th><th>IN</th><th>Complemento</th></tr>';
