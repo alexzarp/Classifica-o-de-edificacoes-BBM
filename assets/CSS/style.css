@@ -130,7 +130,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
 }
-
+/* // , #glp_erro, #altura_erro, #area_erro, #pavimentos_erro */
 .sub_bloco {
     display: none;
     /* animation-name: surgimento-subloco;
@@ -327,4 +327,12 @@ table tr td:first-child {
 
 #titulo_telinha {
     padding-top: 14px;
+}
+
+br {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    line-height: 0px;
 }

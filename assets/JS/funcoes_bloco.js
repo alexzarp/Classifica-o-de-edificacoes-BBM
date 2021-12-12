@@ -7,6 +7,7 @@ preto = "#000000";
 let niveis = Array();
 
 function resetaBlocos(comeco) {
+    document.getElementById('Medidas').style.display = 'none';
     let blocos = document.getElementsByClassName("bloco");
     for (i = 0; i < blocos.length; i++){
         if (blocos[i].id == comeco) {
@@ -133,3 +134,57 @@ function dataInject(medidas) {
     document.getElementById('Medidas').style.display = 'inherit';
     animaDiv('Medidas');
 }
+
+function valida(elemento) {
+    let retorno = true;
+    if (document.getElementById(elemento).querySelector('#area') != null) {
+        let area = document.getElementById(elemento).querySelector('#area').value;
+        if (area === "") {
+            document.getElementById(elemento).querySelector('#area_erro').style.display = 'inherit';
+            document.getElementById(elemento).querySelector('#br_area').innerHTML = '<br>';
+            retorno = false;
+        } else {
+            document.getElementById(elemento).querySelector('#area_erro').style.display = 'none';
+            document.getElementById(elemento).querySelector('#br_area').style.display = 'none';
+            console.log(area);
+        }
+    }
+    if (document.getElementById(elemento).querySelector('#altura') != null) {
+        let altura = document.getElementById(elemento).querySelector('#altura').value;
+        if (altura === "") {
+            document.getElementById(elemento).querySelector('#altura_erro').style.display = 'inherit';
+            document.getElementById(elemento).querySelector('#br_altura').innerHTML = '<br>';
+            retorno = false;
+        } else {
+            document.getElementById(elemento).querySelector('#altura_erro').style.display = 'none';
+            document.getElementById(elemento).querySelector('#br_altura').style.display = 'none';
+            console.log(altura);
+        }
+    }
+    if (document.getElementById(elemento).querySelector('#pavimentos') != null) {
+        let pavimentos = document.getElementById(elemento).querySelector('#pavimentos').value;
+        if (pavimentos === "") {
+            document.getElementById(elemento).querySelector('#pavimentos_erro').style.display = 'inherit';
+            document.getElementById(elemento).querySelector('#br_pavimentos').innerHTML = '<br>';
+            retorno = false;
+        } else {
+            document.getElementById(elemento).querySelector('#pavimentos_erro').style.display = 'none';
+            document.getElementById(elemento).querySelector('#br_pavimentos').style.display = 'none';
+            console.log(pavimentos);
+        }
+    }
+    if (document.getElementById(elemento).querySelector('#glp') != null) {
+        let glp = document.getElementById(elemento).querySelector('#glp').value;
+        if (glp === "") {
+            document.getElementById(elemento).querySelector('#glp_erro').style.display = 'inherit';
+            document.getElementById(elemento).querySelector('#br_glp').innerHTML = '<br>';
+            retorno = false;
+        } else {
+            document.getElementById(elemento).querySelector('#glp_erro').style.display = 'none';
+            document.getElementById(elemento).querySelector('#br_glp').style.display = 'none';
+            console.log(glp);
+        }
+    }
+    return retorno;
+}
+    

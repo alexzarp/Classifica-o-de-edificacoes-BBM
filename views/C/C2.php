@@ -4,10 +4,7 @@
         <div>
             <h1>Informar a área, altura e o número de pavimentos</h1>
             <form>
-                <input type="text" id="area" name="area" placeholder="Digite a área"><br>
-                <input type="text" id="altura" name="altura" placeholder="Digite a altura"><br>
-                <input type="text" id="pavimentos" name="pavimentos" placeholder="Digite o número de pavimentos"><br>
-                <?php include("submissao.php") ?>
+                <?php include("views/form_comum/aap.php") ?>
             </form>
         </div>
     </div>
