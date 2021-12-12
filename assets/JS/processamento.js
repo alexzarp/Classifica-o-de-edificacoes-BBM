@@ -1,10 +1,10 @@
 // medida | IN | complemento
 var medidas = [];
 
-function B1() {
-    let area = document.getElementById("B1_").querySelector('#area').value;
-    let altura = document.getElementById("B1_").querySelector('#altura').value;
-    let pavimentos = document.getElementById("B1_").querySelector('#pavimentos').value;
+function B(num) {
+    let area = document.getElementById(num).querySelector('#area').value;
+    let altura = document.getElementById(num).querySelector('#altura').value;
+    let pavimentos = document.getElementById(num).querySelector('#pavimentos').value;
 
     if (area < 750 && altura < 12) {
         if (area < 200 && pavimentos < 4 && altura < 12) {
@@ -208,6 +208,12 @@ function B1() {
                 ['Proteção estrutural (TRRF)', '14', null]
             ]
         }
+
+        else {
+            medidas = [
+                [null, null, null]
+            ]
+        }
     }
 
     else {
@@ -215,4 +221,6 @@ function B1() {
             [null, null, null]
         ]
     }
+
+    dataInject(medidas);
 }

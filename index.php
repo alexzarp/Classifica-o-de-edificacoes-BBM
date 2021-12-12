@@ -76,12 +76,25 @@
             <div class="linha_divisoria"></div>
             <div class="form_central">
                 <div>
-                    <h1 class="vermelho">Medidas de segurança contra incêndio:</h1>
-                    <ul class="ul_reset">
+                    <h1 class="vermelho" id="titulo_telinha">Medidas de segurança contra incêndio:</h1>
+                    <!-- <ul class="ul_reset">
                         <li>Medida</li>
                         <li>Medidasss</li>
                         <li>Medidadsdsdds</li>
-                    </ul>
+                    </ul> -->
+                    <table id="tabela">
+                        <tr>
+                            <th>Medida</th>
+                            <th>IN</th>
+                            <th>Complemento</th>
+                        </tr>
+                        <tr >
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+
                     <div class="form_central">
                         <button class="verde_claro botao_medidas">
                             <img src="assets/img/pdf.svg" alt="PDF" class="imagem_centro" id="pdf">

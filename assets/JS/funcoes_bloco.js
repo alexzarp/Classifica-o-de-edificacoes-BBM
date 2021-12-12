@@ -101,3 +101,35 @@ var completaForm = (botao) => {
 
     formElement.submit();
 }
+
+function dataInject(medidas) {
+    let string = '<tr><th>Medida</th><th>IN</th><th>Complemento</th></tr>';
+    medidas.forEach(i => {
+        if (i[0] != null) {
+            string = string + '<tr>';
+            string = string + '<td>' + i[0] + '</td>';
+
+            if (i[1] != null) {
+                string = string + '<td>' + i[1] + '</td>';
+            } else {
+                string = string + '<td>' + '-' + '</td>';
+            }
+
+            if (i[2] != null) {
+                string = string + '<td>' + i[2] + '</td>';
+            } else {
+                string = string + '<td>' + '-' + '</td>';
+            }
+            string = string + '</tr>';
+        } else {
+            string = string + '<tr>';
+            for (let k = 0; k < 3; k++) {
+                string = string + '<td>' + '-' + '</td>';
+            }
+            string = string + '</tr>';
+        }
+    });
+    document.getElementById('tabela').innerHTML = string;
+    document.getElementById('Medidas').style.display = 'inherit';
+    animaDiv('Medidas');
+}

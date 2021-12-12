@@ -283,12 +283,36 @@ svg {
     background-color: #A438E6;
 }
 
-.ul_reset {
+table {
     display: table;
-    margin: 0 auto;
-    text-align: start;
-    padding: 20px 0 20px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+
+    background-color: #d8d8d8;
+    /* border-radius: 18px; */
 }
+
+table tr th, td{
+    padding: 10px;
+    border: 2px solid ;
+    border-color: #acacac;
+}
+
+/* table tr th:nth-child(1) {
+    border-radius: 18px 0 0 0;
+}
+
+table tr th:nth-child(3) {
+    border-radius: 0 18px 0 0;
+}
+
+table tr td:last-child {
+    border-radius: 0 0 18px 0;
+}
+
+table tr td:first-child {
+    border-radius: 0 0 0 18px;
+}  */
 
 .botao_medidas {
     display: grid;
@@ -299,4 +323,8 @@ svg {
 
 #pdf {
     padding-left: 8px;
+}
+
+#titulo_telinha {
+    padding-top: 14px;
 }

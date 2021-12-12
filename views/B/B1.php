@@ -9,7 +9,7 @@
                 <input type="number" id="pavimentos" name="pavimentos" placeholder="Digite o número de pavimentos"><br>
                 <!-- <?php include("submissao.php") ?> -->
             </form><br>
-            <button onclick="B1()">Submeter</button>
+            <button onclick="B('B1_')">Submeter</button>
         </div>
     </div>
 </div>
