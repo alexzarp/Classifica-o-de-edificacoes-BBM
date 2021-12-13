@@ -9,6 +9,7 @@ function B(num) {
     if (valida(num)) {
         if (area < 750 && altura < 12) {
             if (area < 200 && pavimentos < 4 && altura < 12) {
+                window.location("entrou");
                 medidas = [
                     ['Detecção automática de incêndio', null, 'Exigido detectores autônomos nos quartos'],
                     ['Extintores - Medida Vital', null, null],
