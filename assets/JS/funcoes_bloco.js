@@ -114,45 +114,62 @@ function dataInject(medidas) {
 function valida(elemento) {
     let retorno = true;
     if (document.getElementById(elemento).querySelector('#area') != null) {
-        let area = document.getElementById(elemento).querySelector('#area').value;
+        var area = document.getElementById(elemento).querySelector('#area').value;
         if (area === "") {
             document.getElementById(elemento).querySelector('#area').style.borderColor = 'red';
             retorno = false;
         } else {
             document.getElementById(elemento).querySelector('#area').style.borderColor = '#DFDFDF';
-            console.log(area);
         }
     }
     if (document.getElementById(elemento).querySelector('#altura') != null) {
-        let altura = document.getElementById(elemento).querySelector('#altura').value;
+        var altura = document.getElementById(elemento).querySelector('#altura').value;
         if (altura === "") {
             document.getElementById(elemento).querySelector('#altura').style.borderColor = 'red';
             retorno = false;
         } else {
             document.getElementById(elemento).querySelector('#altura').style.borderColor = '#DFDFDF';
-            console.log(altura);
         }
     }
     if (document.getElementById(elemento).querySelector('#pavimentos') != null) {
-        let pavimentos = document.getElementById(elemento).querySelector('#pavimentos').value;
+        var pavimentos = document.getElementById(elemento).querySelector('#pavimentos').value;
         if (pavimentos === "") {
             document.getElementById(elemento).querySelector('#pavimentos').style.borderColor = 'red';
             retorno = false;
         } else {
             document.getElementById(elemento).querySelector('#pavimentos').style.borderColor = '#DFDFDF';
-            console.log(pavimentos);
         }
     }
     if (document.getElementById(elemento).querySelector('#glp') != null) {
-        let glp = document.getElementById(elemento).querySelector('#glp').value;
+        var glp = document.getElementById(elemento).querySelector('#glp').value;
         if (glp === "") {
             document.getElementById(elemento).querySelector('#glp').style.borderColor = 'red';
             retorno = false;
         } else {
             document.getElementById(elemento).querySelector('#glp').style.borderColor = '#DFDFDF';
-            console.log(glp);
         }
     }
+    // if (document.getElementById(elemento).querySelector('#terrea') != null) {
+    //     var terrea = document.getElementById(elemento).querySelector('#terrea').value;
+    //     document.getElementById(elemento).querySelector('#terrea').style.display = 'none';
+    //     if (area > 750 || altura > 12) {
+    //         if (control) {
+    //             document.getElementById(elemento).querySelector('#terrea').style.display = 'inherit';
+    //             retorno = false;
+    //             control = false;
+    //         } else {
+    //             if (terrea === "") {
+    //                 document.getElementById(elemento).querySelector('#terrea').style.borderColor = 'red';
+    //                 retorno = false;
+    //             } else {
+    //                 document.getElementById(elemento).querySelector('#terrea').style.borderColor = '#DFDFDF';
+    //                 retorno = true;
+    //                 control = true;
+    //             }
+    //         }
+    //     }
+    // }
     return retorno;
 }
+var control = true;
     
