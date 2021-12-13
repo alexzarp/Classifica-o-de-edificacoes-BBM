@@ -19,7 +19,7 @@ function B(num) {
                 ];
             }
     
-            else if (area > 200 && pavimentos < 4 && altura < 12) {
+            else if ((area > 200) && (pavimentos < 4) && (altura < 12)) {
                 medidas = [
                     ['Detecção automática de incêndio', null, 'Exigido detectores autônomos nos quartos'],
                     ['Extintores - Medida Vital', null, null],
@@ -32,7 +32,7 @@ function B(num) {
                 ]
             }
     
-            else if (area < 200 && pavimentos >= 4 && altura < 12) {
+            else if ((area < 200) && (pavimentos >= 4) && (altura < 12)) {
                 medidas = [
                     ['Detecção automática de incêndio', null, 'Exigido detectores autônomos nos quartos'],
                     ['Extintores - Medida Vital', null, null],
@@ -44,7 +44,7 @@ function B(num) {
                 ]
             }
     
-            else if (area > 200 && pavimentos >= 4 && altura < 12) {
+            else if ((area > 200) && (pavimentos >= 4) && (altura < 12)) {
                 medidas = [
                     ['Controle de matériais de Acabamento', null, null],
                     ['Detecção automática de incêndio', null, 'Exigido detectores autônomos nos quartos'],
@@ -65,8 +65,8 @@ function B(num) {
             }
         }
     
-        else if (area > 750 || altura > 12) {
-            if (pavimentos == 1) { //térrea
+        if ((area > 750) || (altura > 12)) {
+            if (pavimentos = 1) { //térrea
                 ['Acesso de viatura na edificação', '35', null],
                 ['Alarme de incêndio', '12', null],
                 ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
@@ -101,7 +101,7 @@ function B(num) {
                 ]
             }
     
-            else if (6 < altura || altura <= 12) {
+            else if ((6 < altura) && (altura <= 12)) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -120,7 +120,7 @@ function B(num) {
                 ]
             }
     
-            else if (12 < altura || altura <= 30) {
+            else if ((12 < altura) && (altura <= 30)) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -141,7 +141,7 @@ function B(num) {
                 ]
             }
     
-            else if (30 < altura || altura < 60) {
+            else if ((30 < altura) && (altura < 60)) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -163,7 +163,7 @@ function B(num) {
                 ]
             }
     
-            else if (60 < altura || altura <= 90) {
+            else if ((60 < altura) && (altura <= 90)) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -210,11 +210,11 @@ function B(num) {
                 ]
             }
     
-            else {
+            /*else {
                 medidas = [
                     [null, null, null]
                 ]
-            }
+            }*/
         }
     
         else {
