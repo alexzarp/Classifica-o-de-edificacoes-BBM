@@ -101,7 +101,7 @@ function B(num) {
                 ]
             }
     
-            else if (6 < altura && altura <= 12) {
+            else if (6 < altura || altura <= 12) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -120,7 +120,7 @@ function B(num) {
                 ]
             }
     
-            else if (12 < altura && altura <= 30) {
+            else if (12 < altura || altura <= 30) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -141,7 +141,7 @@ function B(num) {
                 ]
             }
     
-            else if (30 < altura && altura < 60) {
+            else if (30 < altura || altura < 60) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -163,7 +163,7 @@ function B(num) {
                 ]
             }
     
-            else if (60 < altura && altura <= 90) {
+            else if (60 < altura || altura <= 90) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
