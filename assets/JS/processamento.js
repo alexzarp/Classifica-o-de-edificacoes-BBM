@@ -67,19 +67,21 @@ function B(num) {
     
         if ((area > 750) || (altura > 12)) {
             if (pavimentos = 1) { //térrea
-                ['Acesso de viatura na edificação', '35', null],
-                ['Alarme de incêndio', '12', null],
-                ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
-                ['Controle de materiais de acabamento', '18', null],
-                ['Detecção automática de incêndio', '12', 'Detecção automática na cozinha, nos quartos e salas (próximos a entrada dos ambientes)'],
-                ['Extintores - Medida Vital', '6', null],
-                ['Gás combustível', '8', null],
-                ['Hidráulico preventivo', '7', null],
-                ['Iluminação de emergência - Medida Vital', '11', null],
-                ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
-                ['Saídas de emergência', '9', null],
-                ['Sinalização para abandono de local - Medida Vital', '13', null],
-                ['Proteção estrutural (TRRF)', '14', null]
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Detecção automática de incêndio', '12', 'Detecção automática na cozinha, nos quartos e salas (próximos a entrada dos ambientes)'],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
             }
     
             else if (altura <= 6) {
@@ -208,13 +210,14 @@ function B(num) {
                     ['Sinalização para abandono de local - Medida Vital', '13', null],
                     ['Proteção estrutural (TRRF)', '14', null]
                 ]
+               
             }
     
-            /*else {
+            else {
                 medidas = [
                     [null, null, null]
                 ]
-            }*/
+            }
         }
     
         else {
