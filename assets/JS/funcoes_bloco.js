@@ -171,5 +171,5 @@ function valida(elemento) {
     // }
     return retorno;
 }
-var control = true;
+// var control = true;
     
