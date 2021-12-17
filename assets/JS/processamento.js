@@ -1,15 +1,15 @@
 // medida | IN | complemento
 var medidas = [];
 
-function B(num) {
-    let area = document.getElementById(num).querySelector('#area').value;
-    let altura = document.getElementById(num).querySelector('#altura').value;
-    let pavimentos = document.getElementById(num).querySelector('#pavimentos').value;
+function B(valor) {
+    let area = document.getElementById(valor).querySelector('#area').value;
+    let altura = document.getElementById(valor).querySelector('#altura').value;
+    let pavimentos = document.getElementById(valor).querySelector('#pavimentos').value;
 
-    if (valida(num)) {
+    if (valida(valor)) {
         if (area < 750 && altura < 12) {
             if (area < 200 && pavimentos < 4 && altura < 12) {
-                window.location("entrou");
+                // window.location("entrou");
                 medidas = [
                     ['Detecção automática de incêndio', null, 'Exigido detectores autônomos nos quartos'],
                     ['Extintores - Medida Vital', null, null],
@@ -67,7 +67,7 @@ function B(num) {
         }
     
         if ((area > 750) || (altura > 12)) {
-            if (pavimentos = 1) { //térrea
+            if (pavimentos == 1) { //térrea
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
@@ -108,7 +108,7 @@ function B(num) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
-                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28.'],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
                     ['Compartimentação horizontal ou de áreas', '14', 'Pode ser substituída por chuveiros automáticos'],
                     ['Controle de materiais de acabamento', '18', null],
                     ['Detecção automática de incêndio', '12', 'Detecção automática na cozinha, nos quartos e salas (próximos a entrada dos ambientes)'],
@@ -148,7 +148,7 @@ function B(num) {
                 medidas = [
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
-                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28.'],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
                     ['Chuveiros automáticos', '15', null],
                     ['Compartimentação vertical', '14', 'Pode ser substituído por controle de fumaça e chuveiro automático, exceto para compartimentação de fachada, shafts e dutos'],
                     ['Compartimentação horizontal ou de áreas', '14', null],
@@ -227,6 +227,130 @@ function B(num) {
             ]
         }
     
+        dataInject(medidas);
+    }
+}
+
+function esqueleto(valor) {
+    let area = document.getElementById(valor).querySelector('#area').value;
+    let altura = document.getElementById(valor).querySelector('#altura').value;
+    let pavimentos = document.getElementById(valor).querySelector('#pavimentos').value;
+
+    if (valida(valor)) {
+        
+
+        dataInject(medidas);
+    }
+}
+
+function D(valor) {
+    let area = document.getElementById(valor).querySelector('#area').value;
+    let altura = document.getElementById(valor).querySelector('#altura').value;
+    let pavimentos = document.getElementById(valor).querySelector('#pavimentos').value;
+
+    if (valida(valor)) {
+        if (area < 750 && altura < 12) {
+            if (area < 200 && pavimentos < 4 && altura < 12) {
+                medidas = [
+                    ['Extintores - Medida Vital', null, null],
+                    ['Gás combustivel', null, null],
+                    ['Saídas de emergência', null, null]
+                ]
+            }
+
+            else if (area < 200 && pavimentos >= 4 && altura < 12) {
+                medidas = [
+                    ['Extintores - Medida Vital', null, null],
+                    ['Gás combustivel', null, null],
+                    ['Hidráulico preventivo', null, null],
+                    ['Saídas de emergência', null, null]
+                ]
+            }
+
+            else if (area > 200 && pavimentos < 4 && altura < 12) {
+                medidas = [
+                    ['Extintores - Medida Vital', null, null],
+                    ['Gás combustivel', null, null],
+                    ['Saídas de emergência', null, null],
+                    ['Instalações elétricas de baixa voltagem', null, null],
+                    ['Sinalização para abandono de local - Medida vital', null, null],
+                    ['Iluminação de emêrgencia - Medida vital', null, null]
+                ]
+            }
+
+            else if (area > 200 && pavimentos >= 4 && altura < 12) {
+                medidas = [
+                    ['Extintores - Medida Vital', null, null],
+                    ['Gás combustivel', null, null],
+                    ['Hidráulico preventivo', null, null],
+                    ['Saídas de emergência', null, null],
+                    ['Instalações elétricas de baixa voltagem', null, null],
+                    ['Sinalização para abandono de local - Medida vital', null, null],
+                    ['Iluminação de emêrgencia - Medida vital', null, null]
+                ]
+            }
+
+            else {
+                medidas = [
+                    [null, null, null]
+                ]
+            }
+        }
+
+        else if (area > 750 || altura >= 12) {
+            if (pavimentos == 1 || altura <= 12) { //térrea
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação horizontal ou de áreas', '14', 'Pode ser substituído por chuveiros automáticos'],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
+            }
+
+            else if (12 < altura && altura <= 23) {// se você colocar || antes que me pergunte, uma altura maior que 23 será aceita
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação vertical', '14', 'Pode ser substituída por detecção automática'],
+                    ['Compartimentação horizontal ou de áreas', '14', 'Pode ser substituído por detecção automática e chuveiros automáticos'],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
+            }
+
+            else if (23 < altura && altura <= 30) {
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18 ']
+                ]
+            }
+        }
+
+        else {
+            medidas = [
+                [null, null, null]
+            ]
+        }
+
         dataInject(medidas);
     }
 }

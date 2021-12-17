@@ -149,27 +149,7 @@ function valida(elemento) {
             document.getElementById(elemento).querySelector('#glp').style.borderColor = '#DFDFDF';
         }
     }
-    // if (document.getElementById(elemento).querySelector('#terrea') != null) {
-    //     var terrea = document.getElementById(elemento).querySelector('#terrea').value;
-    //     document.getElementById(elemento).querySelector('#terrea').style.display = 'none';
-    //     if (area > 750 || altura > 12) {
-    //         if (control) {
-    //             document.getElementById(elemento).querySelector('#terrea').style.display = 'inherit';
-    //             retorno = false;
-    //             control = false;
-    //         } else {
-    //             if (terrea === "") {
-    //                 document.getElementById(elemento).querySelector('#terrea').style.borderColor = 'red';
-    //                 retorno = false;
-    //             } else {
-    //                 document.getElementById(elemento).querySelector('#terrea').style.borderColor = '#DFDFDF';
-    //                 retorno = true;
-    //                 control = true;
-    //             }
-    //         }
-    //     }
-    // }
+
     return retorno;
 }
-// var control = true;
     

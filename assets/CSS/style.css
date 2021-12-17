@@ -80,6 +80,10 @@ main {
     color: #FA2019;
 }
 
+.amarelo {
+    color: #EB8C13;
+}
+
 /* .grade {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

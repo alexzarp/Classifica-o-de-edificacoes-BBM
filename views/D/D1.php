@@ -5,7 +5,8 @@
             <h1>Informar a área, altura e o número de pavimentos</h1>
             <form>
                 <?php include("views/form_comum/aap.php") ?>
-            </form>
+            </form><br>
+            <button onclick="D('D1_')">Submeter</button>
         </div>
     </div>
 </div>
