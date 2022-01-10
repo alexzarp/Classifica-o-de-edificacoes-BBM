@@ -340,7 +340,109 @@ function D(valor) {
                     ['Acesso de viatura na edificação', '35', null],
                     ['Alarme de incêndio', '12', null],
                     ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
-                    ['Controle de materiais de acabamento', '18 ']
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação vertical', '14', 'Pode ser substituída por detecção automática e chuveiros automáticos'],
+                    ['Compartimentação horizontal ou de áreas', '14', 'Pode ser substituído por detecção automática e chuveiros automáticos'],
+                    ['Detecção automática de incêndio', '12', null],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Plano de emergência', '31', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
+            }
+
+            else if ((30 < altura) && (altura < 45)) {
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação vertical', '14', 'Pode ser substituída por detecção automática, controle de fumaça e chuveiro automático até 90 m de altura, exceto para compartimentação de fachada, shafts e dutos'],
+                    ['Compartimentação horizontal ou de áreas', '14', null],
+                    ['Detecção automática de incêndio', '12', null],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Plano de emergência', '31', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
+            }
+
+            else if (45 <= altura && altura < 60) {
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Chuveiros automáticos', '15', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação vertical', '14', 'Pode ser substituída por detecção automática, controle de fumaça e chuveiro automático até 90 m de altura, exceto para compartimentação de fachada, shafts e dutos'],
+                    ['Compartimentação horizontal ou de áreas', '14', null],
+                    ['Detecção automática de incêndio', '12', null],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Plano de emergência', '31', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
+            }
+
+            else if (60 <= altura && altura < 90) {
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Chuveiros automáticos', '15', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação vertical', '14', 'Pode ser substituída por detecção automática, controle de fumaça e chuveiro automático até 90 m de altura, exceto para compartimentação de fachada, shafts e dutos'],
+                    ['Compartimentação horizontal ou de áreas', '14', null],
+                    ['Elevador de de emergência', '9', null],
+                    ['Detecção automática de incêndio', '12', null],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Plano de emergência', '31', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
+                ]
+            }
+
+            else if (altura > 90) {
+                medidas = [
+                    ['Acesso de viatura na edificação', '35', null],
+                    ['Alarme de incêndio', '12', null],
+                    ['Chuveiros automáticos', '15', null],
+                    ['Brigada de incêndio', '28', 'Conforme população fixa, observar IN 28'],
+                    ['Controle de materiais de acabamento', '18', null],
+                    ['Compartimentação vertical', '14', null],
+                    ['Compartimentação horizontal ou de áreas', '14', null],
+                    ['Controle de fumaça', null, null],
+                    ['Elevador de de emergência', '9', null],
+                    ['Detecção automática de incêndio', '12', null],
+                    ['Extintores - Medida Vital', '6', null],
+                    ['Gás combustível', '8', null],
+                    ['Hidráulico preventivo', '7', null],
+                    ['Iluminação de emergência - Medida Vital', '11', null],
+                    ['Instalação elétrica de baixa tensão - Medida Vital', '19', null],
+                    ['Plano de emergência', '31', null],
+                    ['Saídas de emergência', '9', null],
+                    ['Sinalização para abandono de local - Medida Vital', '13', null],
+                    ['Proteção estrutural (TRRF)', '14', null]
                 ]
             }
         }
