@@ -445,6 +445,12 @@ function D(valor) {
                     ['Proteção estrutural (TRRF)', '14', null]
                 ]
             }
+
+            else {
+                medidas = [
+                    [null, null, null]
+                ]
+            }
         }
 
         else {
